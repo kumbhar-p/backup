@@ -1,0 +1,1000 @@
+ 1014  ls
+ 1015  make 
+ 1016  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1017  adb push ir_remote.ko /system/lib/modules/
+ 1018  make 
+ 1019  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1020  adb push ir_remote.ko /system/lib/modules/
+ 1021  make 
+ 1022  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1023  adb push ir_remote.ko /system/lib/modules/
+ 1024  make 
+ 1025  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1026  adb push ir_remote.ko /system/lib/modules/
+ 1027  make 
+ 1028  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1029  adb push ir_remote.ko /system/lib/modules/
+ 1030  make 
+ 1031  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1032  adb push ir_remote.ko /system/lib/modules/
+ 1033  adb root
+ 1034  adb remount
+ 1035  adb push ir_remote.ko /system/lib/modules/
+ 1036  make 
+ 1037  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1038  adb push ir_remote.ko /system/lib/modules/
+ 1039  hexdump -C ir_remote.ko |tail
+ 1040  make 
+ 1041  hexdump -C ir_remote.ko |tail
+ 1042  make 
+ 1043  make clean
+ 1044  ls
+ 1045  make
+ 1046  hexdump -C ir_remote.ko |tail
+ 1047  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1048  hexdump -C ir_remote.ko |tail
+ 1049  adb push ir_remote.ko /system/lib/modules/
+ 1050  make
+ 1051  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1052  adb push ir_remote.ko /system/lib/modules/
+ 1053  make
+ 1054  adb push ir_remote.ko /system/lib/modules/
+ 1055  ls
+ 1056  cp ir_remote_ ir.c
+ 1057  vim ir.c
+ 1058  vim Makefile 
+ 1059  make
+ 1060  ls
+ 1061  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1062  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir.ko 
+ 1063  adb push ir.ko /system/lib/modules/
+ 1064  make clean
+ 1065  rmls
+ 1066  ls
+ 1067  rm ir.c 
+ 1068  vim Makefile 
+ 1069  make
+ 1070  make 
+ 1071  ls
+ 1072  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote.ko 
+ 1073  adb push ir_remote.ko /system/lib/modules/
+ 1074  ls
+ 1075  make clean
+ 1076  ls
+ 1077  cp ir_remote.c gouse.c
+ 1078  rm gouse.c 
+ 1079  cp ir_remote_ gouse.c
+ 1080  vim gouse.c 
+ 1081  vim Makefile 
+ 1082  make
+ 1083  ls
+ 1084  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 gouse.ko 
+ 1085  adb push gouse.ko /system/lib/modules/
+ 1086  vim gouse.c 
+ 1087  make
+ 1088  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 gouse.ko 
+ 1089  adb push gouse.ko /system/lib/modules/
+ 1090  adb root
+ 1091  adb remount
+ 1092  adb push gouse.ko /system/lib/modules/
+ 1093  make clean
+ 1094  ls
+ 1095  rm ir_remote_~
+ 1096  ls
+ 1097  rm ir_remote.c~
+ 1098  ls
+ 1099  mv gouse.c fresh_ir_remote.c
+ 1100  ls
+ 1101  vim Makefile 
+ 1102  make
+ 1103  ls
+ 1104  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1105  adb push fresh_ir_remote.ko /system/lib/modules/
+ 1106  ls
+ 1107  vim fresh_ir_remote.c
+ 1108  vim test_app.c 
+ 1109  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android- test_app.c 
+ 1110  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+ 1111  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c 
+ 1112  export ARCH=arm64
+ 1113  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c 
+ 1114  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/ test_app.c 
+ 1115  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8/mingw/include/sys/cdefs.h test_app.c 
+ 1116  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/development/ndk/platforms/android-21/include/sys/ test_app.c 
+ 1117  ls
+ 1118  vim fresh_ir_remote.c 
+ 1119  sync
+ 1120  ls
+ 1121  vim test_app.c 
+ 1122  gcc test_app.c 
+ 1123  vim test_app.c 
+ 1124  gcc test_app.c 
+ 1125  vim test_app.c 
+ 1126  gcc test_app.c 
+ 1127  ./a.out
+ 1128  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c 
+ 1129  apt-get install libc6-dev-i386
+ 1130  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c 
+ 1131  apt-get install libc6 libc6-dev
+ 1132  apt-get install libc6-dev-i386
+ 1133  apt-get install gcc-multilib g++-multilib
+ 1134  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c 
+ 1135  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c -I /Data/prebuilts/ndk/current/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h
+ 1136  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h
+ 1137  echo $SYSROOT
+ 1138  export SYSROOT=/Data/prebuilts/ndk/current/platforms/android-21/arch-arm64/usr/include/
+ 1139  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c 
+ 1140  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc test_app.c --sysroot=/Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include/
+ 1141  export CC=/Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+ 1142  /Data/ndk/toolchains/aarch64-linux-android-4.9 test_app.c 
+ 1143  cd /Data/ndk/toolchains/aarch64-linux-android-4.
+ 1144  cd /Data/ndk/toolchains/aarch64-linux-android-4.9/
+ 1145  ls
+ 1146  vim setup.mk 
+ 1147  cd /home/nadaf/ir_remote/
+ 1148  ls
+ 1149  rm a.out 
+ 1150  ls
+ 1151  vim ir_remote_ 
+ 1152  rm ir_remote_ 
+ 1153  ls
+ 1154  ls -l
+ 1155  file test_app
+ 1156  adb devices
+ 1157  adb push test_app ~/
+ 1158  adb root
+ 1159  adb remount
+ 1160  adb push test_app ~/
+ 1161  adb push test_app ~
+ 1162  adb root
+ 1163  adb remount
+ 1164  adb push test_app 
+ 1165  adb push test_app ~
+ 1166  adb push test_app /
+ 1167  adb push test_app /.
+ 1168  adb devices
+ 1169  adb root
+ 1170  adb remount
+ 1171  adb push test_app /.
+ 1172  adb push test_app /
+ 1173  adb push test_app /data/
+ 1174  ls
+ 1175  rm test_app
+ 1176  ls
+ 1177  vim test_app.c 
+ 1178  cp test_app.c hello.c
+ 1179  vim hello.c 
+ 1180  gcc hello.c 
+ 1181  ./a.out 
+ 1182  ls
+ 1183  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc hello.c 
+ 1184  cd /Data/out/
+ 1185  ls
+ 1186  cd target/
+ 1187  ls
+ 1188  find ./ -name cdefs.h
+ 1189  cd ..
+ 1190  find ./ -name cdefs.h
+ 1191  vim CaseCheck.txt 
+ 1192  cd ../kernel/
+ 1193  find ./ -name cdefs.h
+ 1194  find ./ -name sys
+ 1195  cd ..
+ 1196  ls
+ 1197  find ./ -name cdefs.h
+ 1198  cd /home/nadaf/ir_remote/
+ 1199  ls
+ 1200  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I ./prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include hello.c 
+ 1201  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include hello.c 
+ 1202  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /target/product/msm8916_64/obj/lib hello.c 
+ 1203  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /target/product/msm8916_64/obj hello.c 
+ 1204  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -L /target/product/msm8916_64/obj hello.c 
+ 1205  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -L /Data/out/target/product/msm8916_64/obj hello.c 
+ 1206  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -L/Data/out/target/product/msm8916_64/obj hello.c 
+ 1207  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l/Data/out/target/product/msm8916_64/obj hello.c 
+ 1208  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /Data/out/target/product/msm8916_64/obj hello.c 
+ 1209  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /Data/out/target/product/msm8916_64/obj hello.c 
+ 1210  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /Data/out/target/product/msm8916_64/obj hello.c \
+ 1211  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /Data/out/target/product/msm8916_64/obj hello.c
+ 1212  PATH=$PATH:/Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/
+ 1213  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include -l /Data/out/target/product/msm8916_64/obj hello.c
+ 1214  ls /Data/out/target/product/msm8916_64/obj
+ 1215  ls -l /Data/out/target/product/msm8916_64/obj
+ 1216  ls -l /Data/out/target/product/msm8916_64/
+ 1217  ls -l /Data/out/target/product/msm8916_64/obj
+ 1218  ls -l /Data/out/target/product/msm8916_64/obj/lib/
+ 1219  ls
+ 1220  cd /Data/out/target/product/msm8916_64/obj/
+ 1221  find ./ -name crtbegin_dynamic.o
+ 1222  PATH=$PATH:/Data/out/target/product/msm8916_64/obj/lib/
+ 1223  cd -
+ 1224  cd /home/nadaf/ir_remote/
+ 1225  ls
+ 1226  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include hello.c
+ 1227  echo $PATH
+ 1228  PATH=$PATH:/Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include/
+ 1229  aarch64-linux-android-gcc hello.c
+ 1230  aarch64-linux-android-gcc hello.cecho $PATH
+ 1231  echo $PATH
+ 1232  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include hello.c
+ 1233  echo $ANDROID_SYSROOT
+ 1234  --sysroot=/Data/development/ndk/platforms/android-21/arch-arm64/
+ 1235  aarch64-linux-android-gcc --sysroot=/Data/development/ndk/platforms/android-21/arch-arm64 hello.c 
+ 1236  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include --sysroot=/opt/android-ndk-r9/platforms/android-18/arch-arm hello.c
+ 1237  find ./ -name crtbegin_dynamic
+ 1238  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-14/arch-arm64/usr/include --sysroot=/Data/development/ndk/platforms/android-21/arch-arm64 hello.c
+ 1239  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/development/ndk/platforms/android-21/arch-arm64 hello.c
+ 1240  cd /Data/development/ndk/platforms/android-21/arch-arm64
+ 1241  find ./ -name crtbegin_dynamic*
+ 1242  cd -
+ 1243  cd /Data/out/
+ 1244  find ./ -name crtbegin_dynamic*
+ 1245  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj hello.c
+ 1246  cd -
+ 1247  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj hello.c
+ 1248  ls
+ 1249  file a.out 
+ 1250  rm a.out 
+ 1251  aarch64-linux-android-gcc --sysroot=/Data/out/target/product/msm8916_64/obj hello.c
+ 1252  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj hello.c
+ 1253  adb push a.out /data
+ 1254  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj hello.c -fPIC
+ 1255  adb push a.out /data
+ 1256  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fpic hello.c
+ 1257  adb push a.out /data
+ 1258  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE hello.c
+ 1259  adb push a.out /data
+ 1260  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -PIE hello.c
+ 1261  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE hello.c
+ 1262  adb push a.out /data
+ 1263  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie hello.c
+ 1264  adb push a.out /data
+ 1265  ls
+ 1266  man gpio_get_value
+ 1267  gpio_get_value
+ 1268  cd /usr/src/
+ 1269  ls
+ 1270  cd linux-headers-4.2.0-27-generic/
+ 1271  ls
+ 1272  cd ../
+ 1273  cd linux-headers-4.2.0-27
+ 1274  ls
+ 1275  vim -t gpio_get_value
+ 1276  vim -t gpio_request
+ 1277  cd /Data/
+ 1278  ls
+ 1279  cd out/target/product/msm8916_64/obj/KERNEL_OBJ/
+ 1280  find ./ -name cdefs.h
+ 1281  cd  /Data/
+ 1282  find ./ -name cdefs.h
+ 1283  find prebuilts/ -name cdefs.h
+ 1284  ls
+ 1285  find development/ndk/platforms/android-21/arch-arm/ -name sys
+ 1286  find development/ndk/platforms/android-21/ -name sys
+ 1287  vim Makefile 
+ 1288  vim build/core/main.mk 
+ 1289  find ./ -name android-23
+ 1290  locate android-23
+ 1291  vim development/ndk/platforms/README.CRT.TXT 
+ 1292  find ./ -name aarch64-linux-android
+ 1293  ndk/build/tools/make-standalone-toolchain.sh 
+ 1294  --arch arm --api 21 --install-dir /tmp/my-android-toolchain
+ 1295  find ./ -name cdefs.h
+ 1296  vim ./prebuilts/ndk/current/platforms/android-21/arch-arm64/usr/include/sys/cdefs.h
+ 1297  cd out/
+ 1298  find ./ -name crtbegin_dynamic.o
+ 1299  cd ..
+ 1300  echo $ANDROID_SYSROOT
+ 1301  source build/envsetup.sh 
+ 1302  echo $ANDROID_SYSROOT
+ 1303  lunch
+ 1304  echo $ANDROID_SYSROOT
+ 1305  man fpic
+ 1306  man -fpic
+ 1307  man -fFic
+ 1308  man Fpic
+ 1309  adb shell
+ 1310  histroy
+ 1311  cd /home/nadaf/ir_remote/
+ 1312  history
+ 1313  ls
+ 1314  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1315  aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie hello.c 
+ 1316  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie hello.c
+ 1317  adb push a.out /data
+ 1318  adb devices
+ 1319  adb root
+ 1320  adb remount
+ 1321  adb push a.out /data
+ 1322  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1323  adb push a.out /data
+ 1324  adb push fresh_ir_remote.ko /system/lib/modules/
+ 1325  vim test_app.c 
+ 1326  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1327  adb push a.out /data
+ 1328  vim test_app.c 
+ 1329  vim test_app.c 
+ 1330  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1331  adb push a.out /data
+ 1332  vim test_app.c 
+ 1333  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1334  adb push a.out /data
+ 1335  vim test_app.c 
+ 1336  rm test_app.c 
+ 1337  vim test_app.c
+ 1338  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1339  gcc test_app.c 
+ 1340  vim test_app.c 
+ 1341  gcc test_app.c 
+ 1342  vim test_app.c 
+ 1343  gcc test_app.c 
+ 1344  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1345  adb push a.out /data
+ 1346  vim test_app.c 
+ 1347  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1348  adb push a.out /data
+ 1349  vim test_app.c 
+ 1350  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1351  adb push a.out /data
+ 1352  vim test_app.c 
+ 1353  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1354  adb push a.out /data
+ 1355  vim test_app.c 
+ 1356  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1357  adb push a.out /data
+ 1358  vim test_app.c 
+ 1359  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1360  adb push a.out /data
+ 1361  vim test_app.c 
+ 1362  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1363  adb push a.out /data
+ 1364  vim test_app.c 
+ 1365  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1366  adb push a.out /data
+ 1367  vim test_app.c 
+ 1368  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1369  adb push a.out /data
+ 1370  vim test_app.c 
+ 1371  adb push a.out /data
+ 1372  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include --sysroot=/Data/out/target/product/msm8916_64/obj -fPIE -pie test_app.c 
+ 1373  adb push a.out /data
+ 1374  vim test_app.c 
+ 1375  dd if=db410c_sd_install_debian.img of=/dev/sdc bs=2M
+ 1376  sync
+ 1377  adb devices
+ 1378  adb kill-server
+ 1379  adb devices
+ 1380  adb shell
+ 1381  cd /sys/adb shell
+ 1382  adb shell
+ 1383  ls
+ 1384  vim Makefile 
+ 1385  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include/ --sysroot= /Data/out/target/product/msm8916_64/obj test_app.c 
+ 1386  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include/ --sysroot=/Data/out/target/product/msm8916_64/obj test_app.c 
+ 1387  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include/ --sysroot=/Data/out/target/product/msm8916_64/obj test_app.c -fPIE -pie
+ 1388  adb push a.out /data
+ 1389  vim fresh_ir_remote.c
+ 1390  vim test_app.c 
+ 1391  vim fresh_ir_remote.c
+ 1392  vim Makefile 
+ 1393  vim /home/nadaf/hello_world/Makefile 
+ 1394  vim Makefile 
+ 1395  ls
+ 1396  pkill -USR1 -x -n dd
+ 1397  ls
+ 1398  cd os/
+ 1399  dd if=db410c_sd_install_debian.img of=/dev/sdc bs=2M
+ 1400  sync
+ 1401  ls
+ 1402  cd ..
+ 1403  ls
+ 1404  cd tool_chain/
+ 1405  ls
+ 1406  cd ..
+ 1407  ls
+ 1408  cd zip_files/
+ 1409  ls
+ 1410  cd ..
+ 1411  ls
+ 1412  cp -r /home/nadaf/ir_remote/ .
+ 1413  ls
+ 1414  cd ir_remote/
+ 1415  ls
+ 1416  vim fresh_ir_remote.c
+ 1417  vim Makefile 
+ 1418  cd ..
+ 1419  ls
+ 1420  cd kernel_4.2/
+ 1421  ls
+ 1422  cd build/
+ 1423  pwd
+ 1424  cd ..
+ 1425  cd ir_remote/
+ 1426  vim Makefile 
+ 1427  make
+ 1428  vim Makefile 
+ 1429  make
+ 1430  vim Makefile 
+ 1431  make
+ 1432  vim Makefile 
+ 1433  make
+ 1434  ls
+ 1435  cd ..
+ 1436  ls
+ 1437  cd kernel_4.5/
+ 1438  ls
+ 1439  ls -a
+ 1440  cd ..
+ 1441  ls
+ 1442  cd ir_remote/
+ 1443  vim Makefile 
+ 1444  make
+ 1445  vim Makefile 
+ 1446  make
+ 1447  vim Makefile 
+ 1448  cd 
+ 1449  cd /home/nadaf/Nadaf/debian/
+ 1450  ls
+ 1451  cd tool_chain/gcc-linaro-4.8-2015.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+ 1452  vim ir_remote/Makefile 
+ 1453  ls
+ 1454  cd ir_remote/
+ 1455  ls
+ 1456  make clean
+ 1457  ls
+ 1458  vim Makefile 
+ 1459  make
+ 1460  make clean
+ 1461  ls
+ 1462  rm hello.c 
+ 1463  ls
+ 1464  rm fresh_ir_remote.c 
+ 1465  cp /home/nadaf/ir_remote/fresh_ir_remote.c .
+ 1466  ls
+ 1467  mr ir_remote.c 
+ 1468  rm ir_remote.c 
+ 1469  ls
+ 1470  rm app
+ 1471  ls
+ 1472  rm a.out 
+ 1473  ls
+ 1474  vim fresh_ir_remote.c 
+ 1475  vim test_app.c 
+ 1476  vim Makefile 
+ 1477  make
+ 1478  vim Makefile 
+ 1479  make
+ 1480  vim Makefile 
+ 1481  make
+ 1482  ls
+ 1483  vim Makefile 
+ 1484  make
+ 1485  vim Makefile 
+ 1486  make
+ 1487  vim ma
+ 1488  vim Makefile 
+ 1489  make
+ 1490  vim Makefile 
+ 1491  make
+ 1492  vim Makefile 
+ 1493  cd ../kernel_4.2/
+ 1494  ls
+ 1495  vim Makefile 
+ 1496  cd build/
+ 1497  pwd
+ 1498  ls
+ 1499  find ./ -name *.h
+ 1500  ls
+ 1501  pwd
+ 1502  find ./ -name types.h
+ 1503  ls
+ 1504  cd /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/
+ 1505  ls
+ 1506  find ./ -name types.h
+ 1507  cd /home/nadaf/Nadaf/debian/
+ 1508  ls
+ 1509  cd kernel_4.2/
+ 1510  find ./ -name types.h
+ 1511  cd build/
+ 1512  cd ..
+ 1513  ls
+ 1514  cd ..
+ 1515  cd ir_remote/
+ 1516  vim Makefile 
+ 1517  make
+ 1518  ls
+ 1519  vim Makefile 
+ 1520  vim fresh_ir_remote.c
+ 1521  ls
+ 1522  make
+ 1523  vim Makefile 
+ 1524  ls
+ 1525  make clean
+ 1526  make
+ 1527  cd ..
+ 1528  ls
+ 1529  cd kernel_4.
+ 1530  cd kernel_4.2/
+ 1531  ls
+ 1532  la
+ 1533  .config
+ 1534  vim .config
+ 1535  make
+ 1536  ls
+ 1537  make -j4 Image dtbs
+ 1538  make -j4 modules
+ 1539  apt-get install device-tree-compile
+ 1540  apt-get install libfdt-dev 
+ 1541  git clone git://codeaurora.org/quic/kernel/skales
+ 1542  ./skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/
+ 1543  http://builds.96boards.org/releases/dragonboard410c/linaro/ubuntu/15.09/initrd.img-4.2.0-linaro-lt-qcom
+ 1544  http://builds.96boards.org/releases/dragonboard410c/linaro/ubuntu/15.09/initrd.img-4.2.0-linaro-lt-qcom./skales/mkbootimg --kernel arch/arm64/boot/Image                    --ramdisk initrd.img-4.2.0-linaro-lt-qcom                    --output boot-db410c.img                    --dt dt.img                    --pagesize 2048                    --base 0x80000000                    --cmdline "root=/dev/disk/by-partlabel/rootfs rw rootwait console=ttyMSM0,115200n8"
+ 1545  ls
+ 1546  vim .config
+ 1547  cd ..
+ 1548  ls
+ 1549  mkdir gpio_kernel
+ 1550  cp -r kernel_4.2 gpio_kernel/
+ 1551  ls
+ 1552  cd gpio_kernel/
+ 1553  ls
+ 1554  rm -r kernel_4.2/
+ 1555  cd ..
+ 1556  ls
+ 1557  cp -r kernel_4.2/ gpio_kernel/
+ 1558  cd gpio_kernel/
+ 1559  ls
+ 1560  rm kernel_4.2/
+ 1561  rm -r kernel_4.2/
+ 1562  ls
+ 1563  cd ..
+ 1564  ls
+ 1565  cd gpio_kernel/
+ 1566  ls
+ 1567  cd kernel_4.2/
+ 1568  ls
+ 1569  export ARCH=arm64
+ 1570  export CROSS_COMPILE=../../tool_chain/gcc-linaro-4.8-2015.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+ 1571  make defconfig
+ 1572  make menuconfig
+ 1573  la
+ 1574  make clean
+ 1575  ls
+ 1576  la
+ 1577  make mrproper
+ 1578  ls
+ 1579  la
+ 1580  export ARCH=arm64
+ 1581  export CROSS_COMPILE=../../tool_chain/gcc-linaro-4.8-2015.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+ 1582  make defconfig
+ 1583  make menuconfig
+ 1584  la
+ 1585  vim .config
+ 1586  make -j4 Image dtbs 
+ 1587  make -j4 modules
+ 1588  apt-get install device-tree-compiler
+ 1589  apt-get install libfdt-dev
+ 1590  git clone git://codeaurora.org/quic/kernel/skales
+ 1591  ./skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/
+ 1592  ./skales/mkbootimg --kernel arch/arm64/boot/Image                    --ramdisk initrd.img-4.2.0-linaro-lt-qcom                    --output boot-db410c.img                    --dt dt.img                    --pagesize 2048                    --base 0x80000000                    --cmdline "root=/dev/disk/by-partlabel/rootfs rw rootwait console=ttyMSM0,115200n8"
+ 1593  ls
+ 1594  ld
+ 1595  la
+ 1596  vim .config
+ 1597  make menuconfig
+ 1598  vim .config
+ 1599  make -j4 Image dtbs 
+ 1600  make -j4 modules
+ 1601  ls
+ 1602  rm boot-db410c.img 
+ 1603  ls
+ 1604  ./skales/dtbTool -o dt.img -s 2048 arch/arm64/boot/dts/qcom/
+ 1605  /skales/mkbootimg --kernel arch/arm64/boot/Image                    --ramdisk initrd.img-4.2.0-linaro-lt-qcom                    --output boot-db410c.img                    --dt dt.img                    --pagesize 2048                    --base 0x80000000                    --cmdline "root=/dev/disk/by-partlabel/rootfs rw rootwait console=ttyMSM0,115200n8"
+ 1606  /skales/mkbootimg --kernel arch/arm64/boot/Image                    --ramdisk initrd.img-4.2.0-linaro-lt-qcom                    --output boot-db410c.img                    --dt dt.img                    --pagesize 2048                    --base 0x80000000                    --cmdline "root=/dev/disk/by-partlabel/rootfs rw rootwait console=ttyMSM0,115200n8
+ 1607  /skales/mkbootimg --kernel arch/arm64/boot/Image                    --ramdisk initrd.img-4.2.0-linaro-lt-qcom                    --output boot-db410c.img                    --dt dt.img                    --pagesize 2048                    --base 0x80000000                    --cmdline "root=/dev/disk/by-partlabel/rootfs rw rootwait console=ttyMSM0,115200n8"
+ 1608  ./skales/mkbootimg --kernel arch/arm64/boot/Image                    --ramdisk initrd.img-4.2.0-linaro-lt-qcom                    --output boot-db410c.img                    --dt dt.img                    --pagesize 2048                    --base 0x80000000                    --cmdline "root=/dev/disk/by-partlabel/rootfs rw rootwait console=ttyMSM0,115200n8"
+ 1609  ls
+ 1610  dd if=db410c_sd_install_debian.img of=/sdc/dev bs=2M
+ 1611  dd if=db410c_sd_install_debian.img of=/dev/sdc bs=2M
+ 1612  sync
+ 1613  man zcat
+ 1614  adb root
+ 1615  adb remount
+ 1616  adb push fresh_ir_remote.ko /system/lib/modules
+ 1617  adb push a.out /data/
+ 1618  adb reboot bootloader
+ 1619  fastboot devices
+ 1620  fastboot flash boot boot.img
+ 1621  fastboot flash userdata userdata.img
+ 1622  fastboot flash cache cache.img
+ 1623  fastboot flash recovery recovery.img
+ 1624  fastboot flash persist persist.img
+ 1625  fastboot flash system system.img
+ 1626  fastboot reboot
+ 1627  adb reboot bootloader
+ 1628  fastboot devices
+ 1629  fastboot flash boot boot.img
+ 1630  fastboot flash userdata userdata.img
+ 1631  fastboot flash cache cache.img
+ 1632  fastboot flash recovery recovery.img
+ 1633  fastboot flash persist persist.img
+ 1634  fastboot flash system system.img
+ 1635  fastboot reboot
+ 1636  adb devices
+ 1637  adb reboot
+ 1638  adb devices
+ 1639  adb shell
+ 1640  adb devices
+ 1641  adb shell
+ 1642  ls
+ 1643  adb root
+ 1644  adb remount
+ 1645  adb push fresh_ir_remote.ko /system/lib/modules/
+ 1646  adb push a.out /data/
+ 1647  vim test_app.c 
+ 1648  ls
+ 1649  mkdir svn
+ 1650  cd svn/
+ 1651  svn
+ 1652  apt-get install subversion
+ 1653  svn co http://172.16.2.19/svn/Android-Capability-Kernel/Project_Android_Sensor_Porting/Trunk/
+ 1654  avn
+ 1655  svn
+ 1656  ls
+ 1657  cd Trunk/
+ 1658  ls
+ 1659  cd Project_Management/
+ 1660  LS
+ 1661  ls
+ 1662  cd ../../
+ 1663  ls
+ 1664  l
+ 1665  ls
+ 1666  cd Trunk/
+ 1667  ls
+ 1668  cd SDLC/
+ 1669  ls
+ 1670  cd Coding/
+ 1671  ls
+ 1672  cd Raspberry_Pi_3/
+ 1673  ls
+ 1674  cd Linux_Kernel_Module/
+ 1675  ls
+ 1676  cd ir_remote
+ 1677  ls
+ 1678  vim ir_remote.c
+ 1679  cd ../ir_remote_2
+ 1680  ls
+ 1681  vim ir_remote_2.c
+ 1682  cd ../../../../
+ 1683  cd ../../
+ 1684  ls
+ 1685  man sprinf
+ 1686  man sprintf
+ 1687  ls /sys/class/gpio/q
+ 1688  cd /usr/lib
+ 1689  ls
+ 1690  q
+ 1691  cd /usr/src/
+ 1692  ls
+ 1693  cd linux-headers-4.2.0-27
+ 1694  ls
+ 1695  vim -t file
+ 1696  cd ..
+ 1697  ls
+ 1698  cd linux-headers-4.2.0-27-generic/
+ 1699  ls
+ 1700  cd ..
+ 1701  cd linux-headers-4.2.0-27
+ 1702  ls
+ 1703  vim -t file
+ 1704  cd ..
+ 1705  cd ir_remote_edited/
+ 1706  ls
+ 1707  vim ir_remote.c 
+ 1708  make
+ 1709  ls
+ 1710  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1711  ls
+ 1712  adb root
+ 1713  adb devices
+ 1714  adb root
+ 1715  adb remount
+ 1716  adb push fresh_ir_remote.ko /system/lib/modules/
+ 1717  vim fresh_ir_remote.c
+ 1718  vim ir_remote.c 
+ 1719  vim ir_remote.c ir_remote1111.c 
+ 1720  cp ir_remote.c ir_remote1111.c 
+ 1721  vim Makefile 
+ 1722  make
+ 1723  vim Makefile 
+ 1724  make
+ 1725  vim Makefile 
+ 1726  vim ir_remote1111.c 
+ 1727  make
+ 1728  vim ir_remote1111.c 
+ 1729  make
+ 1730  vim ir_remote1111.c 
+ 1731  make
+ 1732  vim ir_remote1111.c 
+ 1733  make
+ 1734  ls
+ 1735  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote1111..ko 
+ 1736  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 ir_remote1111.ko 
+ 1737  adb push ir_remote1111.ko /system/lib/modules/
+ 1738  vim ir_remote1111.
+ 1739  vim ir_remote1111.c
+ 1740  ls
+ 1741  make clean
+ 1742  ls
+ 1743  cp /home/nadaf/Desktop/fresh_ir_remote.c ./
+ 1744  ls
+ 1745  vim fresh_ir_remote.c 
+ 1746  rm ir_remote1111.c 
+ 1747  ls
+ 1748  vim Makefile 
+ 1749  ls
+ 1750  rm ir_remote.c 
+ 1751  ls
+ 1752  make
+ 1753  vim fresh_ir_remote.c 
+ 1754  make
+ 1755  ls
+ 1756  vim fresh_ir_remote.c
+ 1757  make clean
+ 1758  ls
+ 1759  vim fresh_ir_remote.c 
+ 1760  make
+ 1761  vim fresh_ir_remote.c 
+ 1762  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1763  adb fresh_ir_remote.ko /system/lib/modules/
+ 1764  adb push fresh_ir_remote.ko /system/lib/modules/
+ 1765  adb root
+ 1766  adb remount
+ 1767  adb push fresh_ir_remote.ko /system/lib/modules/
+ 1768  adb push a.out /data
+ 1769  ./a.out
+ 1770  vim fresh_ir_remote.c
+ 1771  make
+ 1772  ls
+ 1773  cp -r ir_remote ir_remote_edited
+ 1774  ls
+ 1775  cd ir_remote_edited/
+ 1776  ls
+ 1777  make clean
+ 1778  la
+ 1779  ls
+ 1780  rm hello.c 
+ 1781  ls
+ 1782  rm app
+ 1783  ls
+ 1784  rm .a
+ 1785  ls
+ 1786  cd ..
+ 1787  cd ir_remote
+ 1788  ls
+ 1789  adb push a.out /data/
+ 1790  cd ir_remote_edited/
+ 1791  make
+ 1792  adb push fresh_ir_remote.ko /system/lib/modules
+ 1793  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1794  adb push fresh_ir_remote.ko /system/lib/modules
+ 1795  vim fresh_ir_remote.c
+ 1796  make
+ 1797  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1798  adb push fresh_ir_remote.ko /system/lib/modules
+ 1799  vim fresh_ir_remote.c
+ 1800  cd sign_enable/
+ 1801  ls
+ 1802  adb devices
+ 1803  adb reboot bootloader
+ 1804  fastboot devices
+ 1805  fastboot flash boot boot.img
+ 1806  fastboot flash userdata userdata.img
+ 1807  fastboot flash cache cache.img
+ 1808  fastboot flash recovery recovery.img
+ 1809  fastboot flash persist persist.img
+ 1810  fastboot flash system system.img
+ 1811  db reboot
+ 1812  adb reboot
+ 1813  adb devices
+ 1814  adb shell
+ 1815  adb devices
+ 1816  adb shell
+ 1817  adb devices
+ 1818  adb root
+ 1819  adb remount
+ 1820  adb shell
+ 1821  adb devices
+ 1822  adb reboot bootloader
+ 1823  fastboot devices
+ 1824  fastboot flash boot boot.img
+ 1825  fastboot flash userdata userdata.img
+ 1826  fastboot flash cache cache.img
+ 1827  fastboot flash recovery recovery.img
+ 1828  fastboot flash persist persist.img
+ 1829  fastboot flash system system.img
+ 1830  fastboot reboot
+ 1831  adb vices
+ 1832  adb devices
+ 1833  adb shell
+ 1834  ls
+ 1835  cd android_images/
+ 1836  cd sign_enable/
+ 1837  ls
+ 1838  cp /home/nadaf/Desktop/script.sh .
+ 1839  ls
+ 1840  adb devices
+ 1841  sh vim script.sh 
+ 1842  vim script.sh 
+ 1843  adb reboot bootloader
+ 1844  sh script.sh 
+ 1845  adb devices
+ 1846  vim fresh_ir_remote.c
+ 1847  make
+ 1848  vim fresh_ir_remote.c
+ 1849  make
+ 1850  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1851  adb root
+ 1852  adb remount
+ 1853  adb push fresh_ir_remote.ko /system/lib/modules
+ 1854  vim fresh_ir_remote.c
+ 1855  ls
+ 1856  man sprintf
+ 1857  man sscanf
+ 1858  ls\
+ 1859  ls
+ 1860  ls
+ 1861  vim pp.c
+ 1862  ls
+ 1863  cd Nadaf/experiments/
+ 1864  ls
+ 1865  cd array/
+ 1866  ls
+ 1867  vim arra.c 
+ 1868  ls
+ 1869  adb devices
+ 1870  sh script.sh 
+ 1871  adb devices
+ 1872  adb vim script.sh 
+ 1873  q
+ 1874  vim script.sh 
+ 1875  adb reboot bootloader
+ 1876  fast devices
+ 1877  fastboot devices
+ 1878  sh script.sh 
+ 1879  adb devices
+ 1880  adb shell
+ 1881  adb devices
+ 1882  adb shell
+ 1883  cd
+ 1884  ls
+ 1885  cd 
+ 1886  cd ..
+ 1887  exit
+ 1888  adb shell
+ 1889  adb dvices
+ 1890  adb devices
+ 1891  adb shell
+ 1892  adb devices
+ 1893  ls
+ 1894  cd
+ 1895  adb shell
+ 1896  adb devices
+ 1897  adb shell
+ 1898  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 led_sensor.ko 
+ 1899  adb devices
+ 1900  adb root
+ 1901  adb remount
+ 1902  adb push led_sensor.ko /system/lib/modules
+ 1903  adb shell
+ 1904  adb shellk
+ 1905  adb shell
+ 1906  adb devices
+ 1907  adb push led_sensor.ko /system/lib/modules
+ 1908  adb root
+ 1909  adb remount
+ 1910  adb push led_sensor.ko /system/lib/modules
+ 1911  adb shell
+ 1912  vim led_sensor.c
+ 1913  cd ..
+ 1914  cd ir_remote
+ 1915  ls
+ 1916  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1917  adb push fresh_ir_remote.ko /system/lib/modules
+ 1918  adb shell
+ 1919  adb push fresh_ir_remote.ko /system/lib/modules
+ 1920  adb root
+ 1921  adb remount
+ 1922  adb push fresh_ir_remote.ko /system/lib/modules
+ 1923  adb shell
+ 1924  adb devices
+ 1925  adb shell
+ 1926  adb push fresh_ir_remote.ko /system/lib/modules
+ 1927  adb root
+ 1928  adb remount
+ 1929  adb push fresh_ir_remote.ko /system/lib/modules
+ 1930  adb shell
+ 1931  vim fresh_ir_remote.c
+ 1932  cd ..
+ 1933  cp -r ir_remote ir_remote1
+ 1934  cd ir_remote1
+ 1935  ls
+ 1936  make clean
+ 1937  ls
+ 1938  vim fresh_ir_remote.c 
+ 1939  adb push fresh_ir_remote.ko /system/lib/modules
+ 1940  make
+ 1941  adb push fresh_ir_remote.ko /system/lib/modules
+ 1942  adb root
+ 1943  adb remount
+ 1944  adb push fresh_ir_remote.ko /system/lib/modules
+ 1945  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1946  adb push fresh_ir_remote.ko /system/lib/modules
+ 1947  adb root
+ 1948  adb remount
+ 1949  adb push fresh_ir_remote.ko /system/lib/modules
+ 1950  ls
+ 1951  make clan
+ 1952  clean
+ 1953  vim test_app.c 
+ 1954  vim fresh_ir_remote.
+ 1955  vim fresh_ir_remote.c
+ 1956  make
+ 1957  adb devices
+ 1958  make
+ 1959  ls
+ 1960  make clean
+ 1961  ls
+ 1962  make
+ 1963  ls
+ 1964  adb root
+ 1965  adb remount
+ 1966  adb push fresh_ir_remote.ko /system/lib/modules
+ 1967  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1968  adb push fresh_ir_remote.ko /system/lib/modules
+ 1969  adb root
+ 1970  adb remount
+ 1971  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1972  adb push fresh_ir_remote.ko /system/lib/modules
+ 1973  vim led_sensor.c
+ 1974  make
+ 1975  lsmod|less
+ 1976  insmod led_sensor.ko 
+ 1977  lsmod
+ 1978  lsmod|less
+ 1979  ls
+ 1980  rmmod led_sensor
+ 1981  vim led_sensor.c
+ 1982  make
+ 1983  vim led_sensor.c
+ 1984  make
+ 1985  insmod led_sensor.ko 
+ 1986  rmmod led_sensor
+ 1987  insmod led_sensor.ko 
+ 1988  reboot
+ 1989  vim Makefile 
+ 1990  ls
+ 1991  make
+ 1992  la
+ 1993  hexdump -c fresh_ir_remote.ko |less
+ 1994  hexdump -c fresh_ir_remote.ko |tail
+ 1995  hexdump -C fresh_ir_remote.ko |tail
+ 1996  perl /Data/kernel/scripts/sign-file sha512 /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.priv /Data/out/target/product/msm8916_64/obj/KERNEL_OBJ/signing_key.x509 fresh_ir_remote.ko 
+ 1997  hexdump -C fresh_ir_remote.ko |tail
+ 1998  adb devices
+ 1999  adb push fresh_ir_remote.ko /system/lib/modules
+ 2000  adb root
+ 2001  adb remount
+ 2002* 
+ 2003  adb shell
+ 2004  adb devices
+ 2005  adb root
+ 2006  adb remount
+ 2007  adb push fresh_ir_remote.ko /system/lib/modules
+ 2008  adb shell
+ 2009  ls
+ 2010  /Data/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -I /Data/prebuilts/ndk/9/platforms/android-21/arch-arm64/usr/include/ --sysroot=/Data/out/target/product/msm8916_64/obj test_app.c -fPIE -pie
+ 2011  adb push a.out /data
+ 2012  adb shell
+ 2013  history > sp.txt

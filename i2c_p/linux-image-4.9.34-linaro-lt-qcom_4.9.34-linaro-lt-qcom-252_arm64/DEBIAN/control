@@ -1,0 +1,14 @@
+Package: linux-image-4.9.34-linaro-lt-qcom
+Source: linux-4.9.34-linaro-lt-qcom
+Version: 4.9.34-linaro-lt-qcom-252
+Architecture: arm64
+Maintainer: Anonymous <root@x86-64-08>
+Installed-Size: 36782
+Suggests: linux-firmware-image-4.9.34-linaro-lt-qcom
+Provides: linux-image, linux-image-2.6, linux-modules-4.9.34-linaro-lt-qcom
+Section: kernel
+Priority: optional
+Homepage: http://www.kernel.org/
+Description: Linux kernel, version 4.9.34-linaro-lt-qcom
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 4.9.34-linaro-lt-qcom.
