@@ -1,0 +1,140 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class student {
+
+    char *FirstName;
+    char *LastName;
+    int Age;
+    char *Address;
+    char *City;
+    int len;
+
+    public :
+	student(const char *str = NULL, const char *str1 = NULL, int a = 0, const char *str2 = NULL, const char *str3 = NULL) {
+        cout << "In student constructor" << endl;
+       
+        len = strlen(str);
+        FirstName = new char[len+1];
+        strcpy(FirstName, str);
+
+        len = strlen(str1);
+        LastName = new char[len+1];
+        strcpy(LastName, str1);
+
+        Age = a;
+
+        len = strlen(str2);
+        Address = new char[len+1];
+        strcpy(Address, str2);
+
+        len = strlen(str3);
+        City = new char[len+1];
+        strcpy(City, str3);
+    } 
+
+
+    
+    ~student() {
+        cout << "In student destructor" << endl;
+    }
+    
+    void SitInClass();
+    void setdata();
+
+};
+
+
+void student::SitInClass() {
+    cout << "Sitting at front of class" << endl;
+}
+
+void student::setdata() {
+    char *str;
+    cout << "FirstName - ";
+    cin >> str;
+    len = strlen(str);
+    FirstName = new char[len+1];
+    strcpy(FirstName, str);
+
+    cout << "LastName - ";
+    cin >> str;
+    len = strlen(str);
+    LastName = new char[len+1];
+    strcpy(LastName, str);
+
+    cout << "Age - ";
+    cin >> Age;
+
+    cout <<"Address";
+    cin >> str;
+    len = strlen(str);
+    Address = new char[len+1];
+    strcpy(Address, str);
+
+    cout << "city";
+    cin >> str;
+    len = strlen(str);
+    City = new char[len+1];
+    strcpy(City, str);
+    
+}
+
+class teacher : public student {
+
+    char *FirstName;
+    char *LastName;
+    int Age;
+    char *Address;
+    char *City;
+    int len;
+
+    public :
+    teacher(const char *str = NULL, const char *str1 = NULL, int a = 0, const char *str2 = NULL, const char *str3 = NULL) {
+        cout << "In teacher constructor" << endl;
+       
+        len = strlen(str);
+        FirstName = new char[len+1];
+        strcpy(FirstName, str);
+        
+        len = strlen(str);
+        LastName = new char[len+1];
+        strcpy(LastName, str1);
+
+        Age = a;
+
+        len = strlen(str2);
+        Address = new char[len+1];
+        strcpy(Address, str2);
+
+        len = strlen(str3);
+        City = new char[len+1];
+        strcpy(City, str3);
+    }
+
+    ~teacher() {
+        cout << "In teacher destructor" << endl;
+    }
+
+    void GradeStudent();
+    void SitInClass();
+    void setdata();
+
+};
+
+void teacher::GradeStudent() {
+    cout << "student graded" << endl;
+}
+
+void teacher::SitInClass() {
+    cout << "Sitting in main theater" << endl;
+}
+
+class course {
+
+    student s[3];
+    teacher t;
+
+};
+
