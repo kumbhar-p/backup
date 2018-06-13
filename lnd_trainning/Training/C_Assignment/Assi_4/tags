@@ -1,0 +1,96 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIT_TS	Bitwise ass/header/header.h	8;"	d
+BIT_TS	header/header.h	8;"	d
+BUF	Bitwise ass/header/header.h	6;"	d
+BUF	Bitwise ass/src/input_vali.c	5;"	d	file:
+BUF	Bitwise ass/src/my_atoi.c	2;"	d	file:
+BUF	Bitwise ass/src/remove_newline.c	2;"	d	file:
+BUF	header/header.h	6;"	d
+BUF	src/input_vali.c	5;"	d	file:
+BUF	src/my_atoi.c	2;"	d	file:
+BUF	src/remove_newline.c	2;"	d	file:
+CLR_LEFT_SET_BIT	Bitwise ass/header/header.h	18;"	d
+CLR_LEFT_SET_BIT	header/header.h	18;"	d
+CLR_RIGHT_SET_BIT	Bitwise ass/header/header.h	16;"	d
+CLR_RIGHT_SET_BIT	header/header.h	16;"	d
+CLR_S_TO_D_BIT	Bitwise ass/header/header.h	26;"	d
+CLR_S_TO_D_BIT	header/header.h	26;"	d
+FIND_MAX	Bitwise ass/header/header.h	14;"	d
+FIND_MAX	header/header.h	14;"	d
+FIND_MIN	Bitwise ass/header/header.h	12;"	d
+FIND_MIN	header/header.h	12;"	d
+GET_BITS	Bitwise ass/header/header.h	30;"	d
+GET_BITS	header/header.h	30;"	d
+SET_LEFT_CLR_BIT	Bitwise ass/header/header.h	22;"	d
+SET_LEFT_CLR_BIT	header/header.h	22;"	d
+SET_RIGHT_CLR_BIT	Bitwise ass/header/header.h	20;"	d
+SET_RIGHT_CLR_BIT	header/header.h	20;"	d
+SET_S_TO_D_BIT	Bitwise ass/header/header.h	24;"	d
+SET_S_TO_D_BIT	header/header.h	24;"	d
+TOGGLE_S_TO_D_BIT	Bitwise ass/header/header.h	28;"	d
+TOGGLE_S_TO_D_BIT	header/header.h	28;"	d
+bit_copy	Bitwise ass/src/bit_copy.c	/^int bit_copy(int num,int num1,int s,int d,int n)$/;"	f
+bit_copy	src/bit_copy.c	/^int bit_copy(int num,int num1,int s,int d,int n)$/;"	f
+bit_swap	Bitwise ass/src/bit_swap_2num.c	/^int bit_swap(int num,int num1,int s,int d)$/;"	f
+bit_swap	src/bit_swap_2num.c	/^int bit_swap(int num,int num1,int s,int d)$/;"	f
+bit_swp	Bitwise ass/src/bit_swp.c	/^int bit_swp(int num,int s,int d)$/;"	f
+bit_swp	src/bit_swp.c	/^int bit_swp(int num,int s,int d)$/;"	f
+cnt_leading_cleared_bits	Bitwise ass/src/cnt_led_clrbit.c	/^int cnt_leading_cleared_bits (int num) $/;"	f
+cnt_leading_cleared_bits	src/cnt_led_clrbit.c	/^int cnt_leading_cleared_bits (int num) $/;"	f
+cnt_leading_set_bits	Bitwise ass/src/cnt_led_setbit.c	/^int cnt_leading_set_bits (int num) $/;"	f
+cnt_leading_set_bits	src/cnt_led_setbit.c	/^int cnt_leading_set_bits (int num) $/;"	f
+cnt_trailing_cleared_bits	Bitwise ass/src/cnt_trali_clrbit.c	/^int cnt_trailing_cleared_bits (int num)$/;"	f
+cnt_trailing_cleared_bits	src/cnt_trali_clrbit.c	/^int cnt_trailing_cleared_bits (int num)$/;"	f
+cnt_trailing_set_bits	Bitwise ass/src/cnt_trali_setbit.c	/^int cnt_trailing_set_bits (int num)$/;"	f
+cnt_trailing_set_bits	src/cnt_trali_setbit.c	/^int cnt_trailing_set_bits (int num)$/;"	f
+count_bit_clear	Bitwise ass/src/cnt_clrbit.c	/^int count_bit_clear(int num)$/;"	f
+count_bit_clear	src/cnt_clrbit.c	/^int count_bit_clear(int num)$/;"	f
+count_bit_set	Bitwise ass/src/cnt_setbit.c	/^int count_bit_set (int num)$/;"	f
+count_bit_set	src/cnt_setbit.c	/^int count_bit_set (int num)$/;"	f
+display	Bitwise ass/src/display.c	/^void display(int num)$/;"	f
+display	src/display.c	/^void display(int num)$/;"	f
+even_bit_toggle	Bitwise ass/src/even_odd_bit_toggle.c	/^int even_bit_toggle(int num)$/;"	f
+even_bit_toggle	src/even_odd_bit_toggle.c	/^int even_bit_toggle(int num)$/;"	f
+input_validation	Bitwise ass/src/input_vali.c	/^char *input_validation(char *target)$/;"	f
+input_validation	src/input_vali.c	/^char *input_validation(char *target)$/;"	f
+invert_bits	Bitwise ass/src/invert_bit.c	/^int invert_bits(int num,int s,int n)$/;"	f
+invert_bits	src/invert_bit.c	/^int invert_bits(int num,int s,int n)$/;"	f
+left_rotate_bits	Bitwise ass/src/left_rotate.c	/^int left_rotate_bits (unsigned int num)$/;"	f
+left_rotate_bits	src/left_rotate.c	/^int left_rotate_bits (unsigned int num)$/;"	f
+left_rotate_nbits	Bitwise ass/src/left_rotate_nbit.c	/^int left_rotate_nbits (unsigned int num, int n)$/;"	f
+left_rotate_nbits	src/left_rotate_nbit.c	/^int left_rotate_nbits (unsigned int num, int n)$/;"	f
+main	Bitwise ass/src/main.c	/^int main(void)$/;"	f
+main	src/main.c	/^int main(void)$/;"	f
+my_atoi	Bitwise ass/src/my_atoi.c	/^int my_atoi(char *op)$/;"	f
+my_atoi	src/my_atoi.c	/^int my_atoi(char *op)$/;"	f
+my_fgets	Bitwise ass/src/my_atoi.c	/^char *my_fgets(char *op)$/;"	f
+my_fgets	src/my_atoi.c	/^char *my_fgets(char *op)$/;"	f
+my_malloc	Bitwise ass/src/scan_input.c	/^char *my_malloc()$/;"	f
+my_malloc	src/scan_input.c	/^char *my_malloc()$/;"	f
+num_validation	Bitwise ass/src/input_vali.c	/^int num_validation(int num)$/;"	f
+num_validation	src/input_vali.c	/^int num_validation(int num)$/;"	f
+odd_bit_toggle	Bitwise ass/src/even_odd_bit_toggle.c	/^int odd_bit_toggle(int num)$/;"	f
+odd_bit_toggle	src/even_odd_bit_toggle.c	/^int odd_bit_toggle(int num)$/;"	f
+remove_n	Bitwise ass/src/remove_newline.c	/^char* remove_n(char *target)$/;"	f
+remove_n	src/remove_newline.c	/^char* remove_n(char *target)$/;"	f
+right_rotate_bits	Bitwise ass/src/rotate_right.c	/^int right_rotate_bits (unsigned int num)$/;"	f
+right_rotate_bits	src/rotate_right.c	/^int right_rotate_bits (unsigned int num)$/;"	f
+right_rotate_nbits	Bitwise ass/src/rotate_right_nbits.c	/^int right_rotate_nbits (unsigned int num,int n)$/;"	f
+right_rotate_nbits	src/rotate_right_nbits.c	/^int right_rotate_nbits (unsigned int num,int n)$/;"	f
+scan_choice	Bitwise ass/src/scan_input.c	/^int scan_choice()$/;"	f
+scan_choice	src/scan_input.c	/^int scan_choice()$/;"	f
+scan_d_pos	Bitwise ass/src/scan_input.c	/^int scan_d_pos()$/;"	f
+scan_d_pos	src/scan_input.c	/^int scan_d_pos()$/;"	f
+scan_input_num	Bitwise ass/src/scan_input.c	/^int scan_input_num()$/;"	f
+scan_input_num	src/scan_input.c	/^int scan_input_num()$/;"	f
+scan_n_bits	Bitwise ass/src/scan_input.c	/^int scan_n_bits()$/;"	f
+scan_n_bits	src/scan_input.c	/^int scan_n_bits()$/;"	f
+scan_s_pos	Bitwise ass/src/scan_input.c	/^int scan_s_pos()$/;"	f
+scan_s_pos	src/scan_input.c	/^int scan_s_pos()$/;"	f
+set_bits	Bitwise ass/src/set_bits.c	/^int set_bits(int num,int num1,int s,int n)$/;"	f
+set_bits	src/set_bits.c	/^int set_bits(int num,int num1,int s,int n)$/;"	f

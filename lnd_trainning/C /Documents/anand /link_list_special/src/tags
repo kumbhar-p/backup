@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+alternate_insertion	alternate_insertion.c	/^void alternate_insertion (struct node *head)$/;"	f
+count	main.c	/^int count = 0;$/;"	v
+deletion_at_beg	deletion_at_beg.c	/^struct node * deletion_at_beg(struct node *head)$/;"	f
+even_odd_concat	even_odd_concat.c	/^struct node * even_odd_concat (struct node *head)$/;"	f
+even_odd_list	even_odd_list.c	/^void even_odd_list (struct node *head)$/;"	f
+even_odd_single	even_odd_single.c	/^struct node * even_odd_single (struct node *head)$/;"	f
+even_odd_without_function	even_odd_withoutfunction.c	/^struct node * even_odd_without_function (struct node * head)$/;"	f
+find_loop	finding_loop.c	/^struct node *find_loop (struct node *head, int cnt)$/;"	f
+find_remove_loop	find_remove_loop.c	/^struct node *find_remove_loop (struct node *head)$/;"	f
+first_last_next	first_last_next.c	/^struct node *first_last_next (struct node *head)$/;"	f
+insert_at_end	insert_at_end.c	/^struct node * insert_at_end (struct node *head, struct node *temp1)$/;"	f
+insert_loop	insert_loop.c	/^struct node * insert_loop (struct node *head, int cnt)$/;"	f
+insertion_at_beg	insertion_at_beg.c	/^struct node *insertion_at_beg(struct node *head)$/;"	f
+int_input	int_input.c	/^void int_input(int *num)$/;"	f
+left_rotate_link	left_rotate_link.c	/^struct node * left_rotate_link (struct node *head, int cnt)$/;"	f
+left_shift	left_shift.c	/^struct node * left_shift (struct node *head, int cnt)$/;"	f
+left_shift_data	left_shift_data.c	/^struct node * left_shift_data (struct node *head, int cnt)$/;"	f
+link_list_palindrome	list_palindrome.c	/^void link_list_palindrome (struct node *head)$/;"	f
+link_neigh_swap_2	link_swap_2.c	/^struct node *link_neigh_swap_2(struct node * head)$/;"	f
+link_neigh_swap_3	link_swap_3.c	/^struct node *link_neigh_swap_3 (struct node * head)$/;"	f
+link_sort	link_sort_cnt.c	/^struct node *link_sort (struct node * head, int count)$/;"	f
+link_sort_4	link_sort.c	/^struct node *link_sort_4 (struct node *head)$/;"	f
+link_swap	link_swap_data.c	/^struct node * link_swap(struct node *head, int num1, int num2) $/;"	f
+main	main.c	/^int main(void)$/;"	f
+middle_list	middle_list.c	/^struct node * middle_list (struct node *head)$/;"	f
+middle_list_delete	middle_list_delete.c	/^struct node* middle_list_delete (struct node *head)$/;"	f
+n_node_delete_last	n_node_delete.c	/^struct node * n_node_delete_last (struct node *head, int n)$/;"	f
+n_node_from_last	n_node_print.c	/^struct node * n_node_from_last (struct node *head, int n)$/;"	f
+nth_node_reverse	nth_node_reverse.c	/^struct node * nth_node_reverse (struct node *head, int cnt)$/;"	f
+penultimate_delete	penultimate_deletion.c	/^void penultimate_delete (struct node *head)$/;"	f
+print	print.c	/^void print(struct node *head)$/;"	f
+remove_alternate	remove_alternate_ele.c	/^struct node * remove_alternate (struct node *head)$/;"	f
+remove_duplicate	remove_duplicate.c	/^struct node* remove_duplicate(struct node* head)$/;"	f
+remove_loop	remove_loop.c	/^struct node *remove_loop (struct node *head, int cnt)$/;"	f
+reverse_list	reverse.c	/^struct node * reverse_list (struct node *head)$/;"	f
+right_rotate_link	right_rotate_link.c	/^struct node * right_rotate_link (struct node *head, int cnt)$/;"	f
+right_shift	right_shift.c	/^struct node * right_shift (struct node *head, int cnt)$/;"	f
+right_shift_data	right_shift_data.c	/^struct node * right_shift_data (struct node *head, int cnt)$/;"	f
+swap	swap_nodes_two.c	/^void swap(struct node* temp_x, struct node* temp_y)$/;"	f
+swap_nodes_two	swap_nodes_two.c	/^struct node* swap_nodes_two (struct node* head, int num1, int num2)$/;"	f
+two_third_delete	two_third_deletion.c	/^struct node * two_third_delete (struct node *head)$/;"	f

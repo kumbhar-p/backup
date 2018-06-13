@@ -1,0 +1,16 @@
+total 72
+-rwxrwxr-x 1 laxman laxman  8783 Sep  4 12:35 a.out
+-rw-rw-r-- 1 laxman laxman   427 Jun 29 17:25 ass1_a.c
+-rw-rw-r-- 1 laxman laxman   437 Sep  4 12:35 ass1_b.c
+-rw-rw-r-- 1 laxman laxman   864 Jun 29 17:25 ass1_d.c
+-rw-rw-r-- 1 laxman laxman   442 Jun 29 17:25 ass2_a.c
+-rw-rw-r-- 1 laxman laxman   438 Jun 29 17:25 ass2_b.c
+-rw-rw-r-- 1 laxman laxman   882 Jun 29 17:25 ass2_d.c
+-rw-rw-r-- 1 laxman laxman   878 Jun 29 17:25 ass2_d.c~
+-rw-rw-r-- 1 laxman laxman   406 Jun 29 17:25 ass3.c
+-rw-rw-r-- 1 laxman laxman   775 Jun 29 17:25 Ass3.c
+-rw-rw-r-- 1 laxman laxman   408 Jun 29 17:25 ass4.c
+-rw-rw-r-- 1 laxman laxman   777 Jun 29 17:25 Ass4.c
+-rw-rw-r-- 1 laxman laxman    16 Jun 29 17:25 data
+-rw-rw-r-- 1 laxman laxman     0 Sep  4 17:20 more
+-rw-r--r-- 1 laxman laxman 10913 Sep  4 14:31 pages in the address range starting at addr and continuing for len bytes. All pages that contain a part of the speci‐

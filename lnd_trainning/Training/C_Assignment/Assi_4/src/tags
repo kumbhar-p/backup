@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUF	input_vali.c	5;"	d	file:
+BUF	my_atoi.c	2;"	d	file:
+BUF	remove_newline.c	2;"	d	file:
+bit_copy	bit_copy.c	/^int bit_copy(int num,int num1,int s,int d,int n)$/;"	f
+bit_swap	bit_swap_2num.c	/^int bit_swap(int num,int num1,int s,int d)$/;"	f
+bit_swp	bit_swp.c	/^int bit_swp(int num,int s,int d)$/;"	f
+cnt_leading_cleared_bits	cnt_led_clrbit.c	/^int cnt_leading_cleared_bits (int num) $/;"	f
+cnt_leading_set_bits	cnt_led_setbit.c	/^int cnt_leading_set_bits (int num) $/;"	f
+cnt_trailing_cleared_bits	cnt_trali_clrbit.c	/^int cnt_trailing_cleared_bits (int num)$/;"	f
+cnt_trailing_set_bits	cnt_trali_setbit.c	/^int cnt_trailing_set_bits (int num)$/;"	f
+count_bit_clear	cnt_clrbit.c	/^int count_bit_clear(int num)$/;"	f
+count_bit_set	cnt_setbit.c	/^int count_bit_set (int num)$/;"	f
+display	display.c	/^void display(int num)$/;"	f
+even_bit_toggle	even_odd_bit_toggle.c	/^int even_bit_toggle(int num)$/;"	f
+input_validation	input_vali.c	/^char *input_validation(char *target)$/;"	f
+left_rotate_bits	left_rotate.c	/^int left_rotate_bits (unsigned int num)$/;"	f
+left_rotate_nbits	left_rotate_nbit.c	/^int left_rotate_nbits (unsigned int num, int n)$/;"	f
+main	main.c	/^int main(void)$/;"	f
+my_atoi	my_atoi.c	/^int my_atoi(char *op)$/;"	f
+my_fgets	my_atoi.c	/^char *my_fgets(char *op)$/;"	f
+my_malloc	scan_input.c	/^char *my_malloc()$/;"	f
+num_validation	input_vali.c	/^int num_validation(int num)$/;"	f
+odd_bit_toggle	even_odd_bit_toggle.c	/^int odd_bit_toggle(int num)$/;"	f
+remove_n	remove_newline.c	/^char* remove_n(char *target)$/;"	f
+right_rotate_bits	rotate_right.c	/^int right_rotate_bits (unsigned int num)$/;"	f
+right_rotate_nbits	rotate_right_nbits.c	/^int right_rotate_nbits (unsigned int num,int n)$/;"	f
+scan_choice	scan_input.c	/^int scan_choice()$/;"	f
+scan_d_pos	scan_input.c	/^int scan_d_pos()$/;"	f
+scan_input_num	scan_input.c	/^int scan_input_num()$/;"	f
+scan_n_bits	scan_input.c	/^int scan_n_bits()$/;"	f
+scan_s_pos	scan_input.c	/^int scan_s_pos()$/;"	f

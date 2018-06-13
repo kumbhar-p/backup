@@ -1,0 +1,58 @@
+Message-ID: <51B5459D.5050004@globaledgesoft.com>
+Date: Mon, 10 Jun 2013 08:48:53 +0530
+From: Bhagwan Singh Rathore <sr.bhagwan@globaledgesoft.com>
+User-Agent: Thunderbird 2.0.0.4 (X11/20070604)
+MIME-Version: 1.0
+To:  m.saurabh@globaledgesoft.com
+Subject: 1 interview question
+Content-Type: multipart/mixed;
+ boundary="------------040403080501050505020005"
+
+This is a multi-part message in MIME format.
+--------------040403080501050505020005
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+
+
+
+--------------040403080501050505020005
+Content-Type: text/plain;
+ name="BhagwanSingh_interview.txt"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="BhagwanSingh_interview.txt"
+
+1. what is the difference between static and dynamic library?
+
+2. what is the difference between malloc and calloc ?
+
+3. explain about memory layout ?
+
+4. if u have a link list's any node's data D1 and one other data D2 , if D1 > D2, then put a node with value D2 after D1 otherwise put a node with value D2 before D1 and you don't have the head of link list.
+
+5. if char *p = "Hello";
+	p++;
+	printf("%s\n",p);
+
+	what is will print?
+
+6. how will you pass command line argument in GDB?
+
+7. if executable file is executing, how will you debug it, without stoping it?
+
+8. what is the specific use of BSS data segment?
+
+9. implement the strstr function?
+
+10. tell about SDLC ?
+
+11. how will you make and use shared library in your program with the help of makefile?
+
+12. what is the difference between structure and union?
+
+
+
+
+--------------040403080501050505020005--
+

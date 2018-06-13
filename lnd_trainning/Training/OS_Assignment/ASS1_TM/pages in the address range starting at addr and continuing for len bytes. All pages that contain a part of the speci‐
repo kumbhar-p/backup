@@ -1,0 +1,144 @@
+MLOCK(2)                                                  Linux Programmer's Manual                                                 MLOCK(2)
+
+
+
+NNAAMMEE
+       mlock, munlock, mlockall, munlockall - lock and unlock memory
+
+SSYYNNOOPPSSIISS
+       ##iinncclluuddee <<ssyyss//mmmmaann..hh>>
+
+       iinntt mmlloocckk((ccoonnsstt vvooiidd **_a_d_d_r,, ssiizzee__tt _l_e_n));;
+       iinntt mmuunnlloocckk((ccoonnsstt vvooiidd **_a_d_d_r,, ssiizzee__tt _l_e_n));;
+
+       iinntt mmlloocckkaallll((iinntt _f_l_a_g_s));;
+       iinntt mmuunnlloocckkaallll((vvooiidd));;
+
+DDEESSCCRRIIPPTTIIOONN
+       mmlloocckk()  and mmlloocckkaallll() respectively lock part or all of the calling process's virtual address space into RAM, preventing that memory
+       from being paged to the swap area.  mmuunnlloocckk() and mmuunnlloocckkaallll() perform the converse operation, respectively unlocking part or all  of
+       the  calling process's virtual address space, so that pages in the specified virtual address range may once more to be swapped out if
+       required by the kernel memory manager.  Memory locking and unlocking are performed in units of whole pages.
+
+   mmlloocckk(()) aanndd mmuunnlloocckk(())
+       mmlloocckk() locks pages in the address range starting at _a_d_d_r and continuing for _l_e_n bytes.  All pages that contain a part of the  speci‐
+       fied  address  range are guaranteed to be resident in RAM when the call returns successfully; the pages are guaranteed to stay in RAM
+       until later unlocked.
+
+       mmuunnlloocckk() unlocks pages in the address range starting at _a_d_d_r and continuing for _l_e_n bytes.  After this call, all pages that  contain
+       a part of the specified memory range can be moved to external swap space again by the kernel.
+
+   mmlloocckkaallll(()) aanndd mmuunnlloocckkaallll(())
+       mmlloocckkaallll() locks all pages mapped into the address space of the calling process.  This includes the pages of the code, data and stack
+       segment, as well as shared libraries, user space kernel data, shared memory, and memory-mapped files.  All mapped pages  are  guaran‐
+       teed to be resident in RAM when the call returns successfully; the pages are guaranteed to stay in RAM until later unlocked.
+
+       The _f_l_a_g_s argument is constructed as the bitwise OR of one or more of the following constants:
+
+       MMCCLL__CCUURRRREENNTT Lock all pages which are currently mapped into the address space of the process.
+
+       MMCCLL__FFUUTTUURREE  Lock all pages which will become mapped into the address space of the process in the future.  These could be for instance
+                   new pages required by a growing heap and stack as well as new memory mapped files or shared memory regions.
+
+       If MMCCLL__FFUUTTUURREE has been specified, then a later system call (e.g., mmmmaapp(2), ssbbrrkk(2), mmaalllloocc(3)), may fail if it would cause the number
+       of  locked  bytes to exceed the permitted maximum (see below).  In the same circumstances, stack growth may likewise fail: the kernel
+       will deny stack expansion and deliver a SSIIGGSSEEGGVV signal to the process.
+
+       mmuunnlloocckkaallll() unlocks all pages mapped into the address space of the calling process.
+
+RREETTUURRNN VVAALLUUEE
+       On success these system calls return 0.  On error, -1 is returned, _e_r_r_n_o is set appropriately, and no changes are made to  any  locks
+       in the address space of the process.
+
+EERRRROORRSS
+       EENNOOMMEEMM (Linux  2.6.9  and  later) the caller had a nonzero RRLLIIMMIITT__MMEEMMLLOOCCKK soft resource limit, but tried to lock more memory than the
+              limit permitted.  This limit is not enforced if the process is privileged (CCAAPP__IIPPCC__LLOOCCKK).
+
+       EENNOOMMEEMM (Linux 2.4 and earlier) the calling process tried to lock more than half of RAM.
+
+       EEPPEERRMM  The caller is not privileged, but needs privilege (CCAAPP__IIPPCC__LLOOCCKK) to perform the requested operation.
+
+       For mmlloocckk() and mmuunnlloocckk():
+
+       EEAAGGAAIINN Some or all of the specified address range could not be locked.
+
+       EEIINNVVAALL The result of the addition _s_t_a_r_t+_l_e_n was less than _s_t_a_r_t (e.g., the addition may have resulted in an overflow).
+
+       EEIINNVVAALL (Not on Linux) _a_d_d_r was not a multiple of the page size.
+
+       EENNOOMMEEMM Some of the specified address range does not correspond to mapped pages in the address space of the process.
+
+       For mmlloocckkaallll():
+
+       EEIINNVVAALL Unknown _f_l_a_g_s were specified.
+
+       For mmuunnlloocckkaallll():
+
+       EEPPEERRMM  (Linux 2.6.8 and earlier) The caller was not privileged (CCAAPP__IIPPCC__LLOOCCKK).
+
+CCOONNFFOORRMMIINNGG TTOO
+       POSIX.1-2001, SVr4.
+
+AAVVAAIILLAABBIILLIITTYY
+       On POSIX systems on which mmlloocckk() and mmuunnlloocckk() are available, __PPOOSSIIXX__MMEEMMLLOOCCKK__RRAANNGGEE is defined in _<_u_n_i_s_t_d_._h_> and the number of  bytes
+       in a page can be determined from the constant PPAAGGEESSIIZZEE (if defined) in _<_l_i_m_i_t_s_._h_> or by calling _s_y_s_c_o_n_f_(___S_C___P_A_G_E_S_I_Z_E_).
+
+       On  POSIX systems on which mmlloocckkaallll() and mmuunnlloocckkaallll() are available, __PPOOSSIIXX__MMEEMMLLOOCCKK is defined in _<_u_n_i_s_t_d_._h_> to a value greater than
+       0.  (See also ssyyssccoonnff(3).)
+
+NNOOTTEESS
+       Memory locking has two main applications: real-time algorithms and high-security data  processing.   Real-time  applications  require
+       deterministic timing, and, like scheduling, paging is one major cause of unexpected program execution delays.  Real-time applications
+       will usually also switch to a real-time scheduler with sscchheedd__sseettsscchheedduulleerr(2).  Cryptographic security software often handles critical
+       bytes  like passwords or secret keys as data structures.  As a result of paging, these secrets could be transferred onto a persistent
+       swap store medium, where they might be accessible to the enemy long after the security software has erased the  secrets  in  RAM  and
+       terminated.   (But be aware that the suspend mode on laptops and some desktop computers will save a copy of the system's RAM to disk,
+       regardless of memory locks.)
+
+       Real-time processes that are using mmlloocckkaallll() to prevent delays on page faults should reserve enough locked stack pages before enter‐
+       ing  the  time-critical  section,  so that no page fault can be caused by function calls.  This can be achieved by calling a function
+       that allocates a sufficiently large automatic variable (an array) and writes to the memory occupied by this array in order  to  touch
+       these stack pages.  This way, enough pages will be mapped for the stack and can be locked into RAM.  The dummy writes ensure that not
+       even copy-on-write page faults can occur in the critical section.
+
+       Memory locks are not inherited by a child created via ffoorrkk(2) and are automatically removed (unlocked) during an  eexxeeccvvee(2)  or  when
+       the process terminates.
+
+       The memory lock on an address range is automatically removed if the address range is unmapped via mmuunnmmaapp(2).
+
+       Memory  locks do not stack, that is, pages which have been locked several times by calls to mmlloocckk() or mmlloocckkaallll() will be unlocked by
+       a single call to mmuunnlloocckk() for the corresponding range or by mmuunnlloocckkaallll().  Pages which are mapped to several locations or by several
+       processes stay locked into RAM as long as they are locked at least at one location or by at least one process.
+
+   LLiinnuuxx nnootteess
+       Under  Linux,  mmlloocckk()  and  mmuunnlloocckk()  automatically  round _a_d_d_r down to the nearest page boundary.  However, POSIX.1-2001 allows an
+       implementation to require that _a_d_d_r is page aligned, so portable applications should ensure this.
+
+       The _V_m_L_c_k field of the Linux-specific _/_p_r_o_c_/_P_I_D_/_s_t_a_t_u_s file shows how many kilobytes of memory the process with  ID  _P_I_D  has  locked
+       using mmlloocckk(), mmlloocckkaallll(), and mmmmaapp(2) MMAAPP__LLOOCCKKEEDD.
+
+   LLiimmiittss aanndd ppeerrmmiissssiioonnss
+       In  Linux 2.6.8 and earlier, a process must be privileged (CCAAPP__IIPPCC__LLOOCCKK) in order to lock memory and the RRLLIIMMIITT__MMEEMMLLOOCCKK soft resource
+       limit defines a limit on how much memory the process may lock.
+
+       Since Linux 2.6.9, no limits are placed on the amount of memory that a privileged  process  can  lock  and  the  RRLLIIMMIITT__MMEEMMLLOOCCKK  soft
+       resource limit instead defines a limit on how much memory an unprivileged process may lock.
+
+BBUUGGSS
+       In  the  2.4  series  Linux  kernels up to and including 2.4.17, a bug caused the mmlloocckkaallll() MMCCLL__FFUUTTUURREE flag to be inherited across a
+       ffoorrkk(2).  This was rectified in kernel 2.4.18.
+
+       Since kernel 2.6.9, if a privileged process calls _m_l_o_c_k_a_l_l_(_M_C_L___F_U_T_U_R_E_) and later drops privileges (loses the CCAAPP__IIPPCC__LLOOCCKK  capability
+       by,  for example, setting its effective UID to a nonzero value), then subsequent memory allocations (e.g., mmmmaapp(2), bbrrkk(2)) will fail
+       if the RRLLIIMMIITT__MMEEMMLLOOCCKK resource limit is encountered.
+
+SSEEEE AALLSSOO
+       mmmmaapp(2), sseettrrlliimmiitt(2), sshhmmccttll(2), ssyyssccoonnff(3), pprroocc(5), ccaappaabbiilliittiieess(7)
+
+CCOOLLOOPPHHOONN
+       This page is part of release 3.54 of the Linux _m_a_n_-_p_a_g_e_s project.  A description of the  project,  and  information  about  reporting
+       bugs, can be found at http://www.kernel.org/doc/man-pages/.
+
+
+
+Linux                                                            2011-09-14                                                         MLOCK(2)

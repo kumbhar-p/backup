@@ -1,0 +1,19 @@
+vpath %.c src
+OBJ = obj/
+EXE = exe/
+
+exe:main.o add.o sub.o
+	gcc -o $(EXE)exec $(OBJ)*.o   
+
+%.o:%.c
+	gcc -c $< -o $(OBJ)$@   
+        	
+.PHONY:clean
+clean:
+	rm $(OBJ)*.o
+	rm $(EXE)exec
+
+run:
+	$(EXE)exec
+
+

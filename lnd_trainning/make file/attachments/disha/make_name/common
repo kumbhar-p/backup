@@ -1,0 +1,4 @@
+tar :
+	@make -f GNUmakefile
+	@make -f makefile
+	@make -f Makefile

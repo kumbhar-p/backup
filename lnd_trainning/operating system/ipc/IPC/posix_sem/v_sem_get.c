@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<sys/types.h>
+#include<sys/ipc.h>
+#include<sys/sem.h>
+
+int main(int argc , char **argv)
+{
+
+	int id;
+	int ret;
+	if(argc < 2) {
+		printf("usage : ./a.out	setnum\n");
+		exit(EXIT_SUCCESS);
+	}
+
+	id = semget(5, 5 , IPC_CREAT | 0666);
+	perror("semget");
+	
+	ret = semctl(id, 2 , GETVAL);
+	perror("semctrl");
+
+	printf("ret : %d\n", ret);
+
+	return 0;
+
+}

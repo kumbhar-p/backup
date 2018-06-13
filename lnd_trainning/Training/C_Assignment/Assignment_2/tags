@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUF	Ass_1.c	4;"	d	file:
+BUF	Ass_2.c	4;"	d	file:
+BUF	Ass_3.c	4;"	d	file:
+BUF	Ass_4.c	4;"	d	file:
+BUF	input_vali.c	4;"	d	file:
+BUF	remove_newline.c	2;"	d	file:
+SIZE	Ass_1.c	3;"	d	file:
+SIZE	Ass_2.c	3;"	d	file:
+SIZE	Ass_3.c	3;"	d	file:
+ST	Ass_1.c	/^}ST;$/;"	t	typeref:struct:st	file:
+ST	Ass_2.c	/^}ST;$/;"	t	typeref:struct:st	file:
+ST	Ass_3.c	/^}ST;$/;"	t	typeref:struct:st	file:
+ST	Ass_4.c	/^}ST;$/;"	t	typeref:struct:st	file:
+add_begin	Ass_4.c	/^void add_begin(ST **ptr)$/;"	f
+delete_front	Ass_2.c	/^void delete_front()$/;"	f
+delete_front	Ass_3.c	/^void delete_front()$/;"	f
+display	Ass_1.c	/^int display()$/;"	f
+display	Ass_2.c	/^void display()$/;"	f
+display	Ass_3.c	/^void display()$/;"	f
+display	Ass_4.c	/^void display(ST *ptr)$/;"	f
+front	Ass_2.c	/^	int front;$/;"	m	struct:st	file:
+front	Ass_3.c	/^	int front;$/;"	m	struct:st	file:
+input_validation	input_vali.c	/^char *input_validation(char *target)$/;"	f
+insert_rear	Ass_2.c	/^void insert_rear(int ele)$/;"	f
+insert_rear	Ass_3.c	/^void insert_rear(int ele)$/;"	f
+link	Ass_4.c	/^	struct st *link;$/;"	m	struct:st	typeref:struct:st::st	file:
+main	Ass_1.c	/^int main(void)$/;"	f
+main	Ass_2.c	/^int main(void)$/;"	f
+main	Ass_3.c	/^int main(void)$/;"	f
+main	Ass_4.c	/^int main(void)$/;"	f
+my_atoi	Ass_1.c	/^int my_atoi(char *op)$/;"	f
+my_atoi	Ass_2.c	/^int my_atoi(char *op)$/;"	f
+my_atoi	Ass_3.c	/^int my_atoi(char *op)$/;"	f
+my_atoi	Ass_4.c	/^int my_atoi(char *op)$/;"	f
+my_fgets	Ass_1.c	/^char *my_fgets(char *op)$/;"	f
+my_fgets	Ass_2.c	/^char *my_fgets(char *op)$/;"	f
+my_fgets	Ass_3.c	/^char *my_fgets(char *op)$/;"	f
+pop	Ass_1.c	/^int pop()$/;"	f
+push	Ass_1.c	/^int push(int ele)$/;"	f
+que	Ass_2.c	/^	int que[SIZE];$/;"	m	struct:st	file:
+que	Ass_3.c	/^	int que[SIZE];$/;"	m	struct:st	file:
+rear	Ass_2.c	/^	int rear;$/;"	m	struct:st	file:
+rear	Ass_3.c	/^	int rear;$/;"	m	struct:st	file:
+remove_n	remove_newline.c	/^char* remove_n(char *target)$/;"	f
+roll	Ass_4.c	/^	int roll;$/;"	m	struct:st	file:
+s	Ass_1.c	/^ST s;$/;"	v
+s	Ass_2.c	/^ST s;$/;"	v
+s	Ass_3.c	/^ST s;$/;"	v
+st	Ass_1.c	/^typedef struct st $/;"	s	file:
+st	Ass_2.c	/^typedef struct st $/;"	s	file:
+st	Ass_3.c	/^typedef struct st $/;"	s	file:
+st	Ass_4.c	/^typedef struct st$/;"	s	file:
+stk	Ass_1.c	/^	int stk[SIZE];$/;"	m	struct:st	file:
+top	Ass_1.c	/^	int top;$/;"	m	struct:st	file:

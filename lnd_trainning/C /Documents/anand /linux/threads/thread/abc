@@ -1,0 +1,1000 @@
+ 1055  gcc fast_mutex.c -lpthread
+ 1056  ./a.out 
+ 1057  vim fast_mutex.c 
+ 1058  gcc fast_mutex.c -lpthread
+ 1059  ./a.out 
+ 1060  vim fast_mutex.c 
+ 1061  gcc fast_mutex.c -lpthread
+ 1062  ./a.out 
+ 1063  vim fast_mutex.c 
+ 1064  cp fast_mutex.c more_fast_mutex.c
+ 1065  vim more_fast_mutex.c 
+ 1066  gcc more_fast_mutex.c 
+ 1067  gcc more_fast_mutex.c -lpthread
+ 1068  ./a.out 
+ 1069  vim more_fast_mutex.c 
+ 1070  gcc more_fast_mutex.c -lpthread
+ 1071  ./a.out 
+ 1072  vim more_fast_mutex.c 
+ 1073  gcc more_fast_mutex.c -lpthread
+ 1074  ./a.out 
+ 1075  vim more_fast_mutex.c 
+ 1076  gcc more_fast_mutex.c -lpthread
+ 1077  ./a.out 
+ 1078  vim more_fast_mutex.c 
+ 1079  gcc more_fast_mutex.c -lpthread
+ 1080  ./a.out 
+ 1081  vim more_fast_mutex.c 
+ 1082  gcc more_fast_mutex.c -lpthread
+ 1083  ./a.out 
+ 1084  vim more_fast_mutex.c 
+ 1085  gcc more_fast_mutex.c -lpthread
+ 1086  ./a.out 
+ 1087  vim more_fast_mutex.c 
+ 1088  gcc more_fast_mutex.c -lpthread
+ 1089  ./a.out 
+ 1090  vim more_fast_mutex.c 
+ 1091  gcc more_fast_mutex.c -lpthread
+ 1092  ./a.out 
+ 1093  vim more_fast_mutex.c 
+ 1094  vim fast_mutex_runtime.c
+ 1095  ls
+ 1096  cp fast_mutex.c fast_mutex_runtime.c 
+ 1097  vim fast_mutex_runtime.c 
+ 1098  gcc fast_mutex_runtime.c 
+ 1099  vim fast_mutex_runtime.c 
+ 1100  gcc fast_mutex_runtime.c 
+ 1101  vim fast_mutex_runtime.c 
+ 1102  gcc fast_mutex_runtime.c 
+ 1103  gcc fast_mutex_runtime.c -lpthread
+ 1104  ./a.out 
+ 1105  vim fast_mutex_runtime.c 
+ 1106  gcc fast_mutex_runtime.c -lpthread
+ 1107  ./a.out 
+ 1108  vim fast_mutex_runtime.c 
+ 1109  gcc fast_mutex_runtime.c -lpthread
+ 1110  ./a.out 
+ 1111  vim fast_mutex_runtime.c 
+ 1112  gcc fast_mutex_runtime.c -lpthread
+ 1113  ./a.out 
+ 1114  vim fast_mutex_runtime.c 
+ 1115  gcc fast_mutex_runtime.c -lpthread
+ 1116  ./a.out 
+ 1117  ls
+ 1118  mkdir err_mutex
+ 1119  ls
+ 1120  cd err_mutex/
+ 1121  ls
+ 1122  cd ..
+ 1123  ls
+ 1124  cp fast_mutex.c err_mutex/
+ 1125  cd err_mutex/
+ 1126  ls
+ 1127  mv fast_mutex.c err_mutex.c
+ 1128  ls
+ 1129  vim err_mutex.c 
+ 1130  gcc err_mutex.c 
+ 1131  vim err_mutex.c 
+ 1132  gcc err_mutex.c 
+ 1133  vim err_mutex.c 
+ 1134  gcc err_mutex.c 
+ 1135  vim err_mutex.c 
+ 1136  gcc err_mutex.c 
+ 1137  gcc err_mutex.c -lpthread
+ 1138  ./a.out 
+ 1139  gcc err_mutex.c 
+ 1140  vim err_mutex.c 
+ 1141  gcc err_mutex.c -lpthread
+ 1142  ./a.out 
+ 1143  vim err_mutex.c 
+ 1144  gcc err_mutex.c -lpthread
+ 1145  ./a.out 
+ 1146  vim err_mutex.c 
+ 1147  ./a.out 
+ 1148  vim err_mutex.c 
+ 1149  gcc err_mutex.c -lpthread
+ 1150  ./a.out 
+ 1151  vim err_mutex.c 
+ 1152  gcc err_mutex.c -lpthread
+ 1153  ./a.out 
+ 1154  vim err_mutex.c 
+ 1155  gcc err_mutex.c -lpthread
+ 1156  vim err_mutex.c 
+ 1157  gcc err_mutex.c -lpthread
+ 1158  ls
+ 1159  vim err_mutex.c 
+ 1160  gcc err_mutex.c -lpthread
+ 1161  vim err_mutex.c 
+ 1162  gcc err_mutex.c -lpthread
+ 1163  vim err_mutex.c 
+ 1164  gcc err_mutex.c -lpthread
+ 1165  vim err_mutex.c 
+ 1166  gcc err_mutex.c -lpthread
+ 1167  vim err_mutex.c 
+ 1168  gcc err_mutex.c -lpthread
+ 1169  vim err_mutex.c 
+ 1170  gcc err_mutex.c -lpthread
+ 1171  ./a.out 
+ 1172  ls
+ 1173  vim err_mutex.c 
+ 1174  ls
+ 1175  cp err_mutex.c ../
+ 1176  cd ..
+ 1177  ls
+ 1178  vim err_mutex.c 
+ 1179  vim rec_mutex.c
+ 1180  cp err_mutex.c rec_mutex.c 
+ 1181  ls
+ 1182  vim rec_mutex.c 
+ 1183  gcc rec_mutex.c -lpthread
+ 1184  ./a.out 
+ 1185  vim rec_mutex.c 
+ 1186  gcc rec_mutex.c -lpthread
+ 1187  ./a.out 
+ 1188  vim rec_mutex.c 
+ 1189  gcc rec_mutex.c -lpthread
+ 1190  ./a.out 
+ 1191  vim rec_mutex.c 
+ 1192  gcc rec_mutex.c -lpthread
+ 1193  ./a.out 
+ 1194  vim rec_mutex.c 
+ 1195  gcc rec_mutex.c -lpthread
+ 1196  ./a.out 
+ 1197  vim rec_mutex.c 
+ 1198  gcc rec_mutex.c -lpthread
+ 1199  ./a.out 
+ 1200  vim rec_mutex.c 
+ 1201  gcc rec_mutex.c -lpthread
+ 1202  ./a.out 
+ 1203  vim rec_mutex.c 
+ 1204  ls
+ 1205  vim fast_mutex.c 
+ 1206  vim err_mutex.c 
+ 1207  vim rec_mutex.c 
+ 1208  vim fast_mutex.c 
+ 1209  gcc fast_mutex.c 
+ 1210  vim fast_mutex.c 
+ 1211  gcc fast_mutex.c 
+ 1212  gcc fast_mutex.c -lpthread
+ 1213  ./a.out 
+ 1214  vim fast_mutex.c 
+ 1215  gcc fast_mutex.c 
+ 1216  gcc fast_mutex.c -lpthread
+ 1217  ./a.out 
+ 1218  vim fast_mutex.c 
+ 1219  gcc fast_mutex.c -lpthread
+ 1220  ./a.out 
+ 1221  vim fast_mutex.c 
+ 1222  gcc fast_mutex.c -lpthread
+ 1223  ./a.out 
+ 1224  vim fast_mutex.c 
+ 1225  ls
+ 1226  vim more_fast_mutex.c 
+ 1227  gcc more_fast_mutex.c 
+ 1228  gcc more_fast_mutex.c -lpthread
+ 1229  ./a.out 
+ 1230  vim more_fast_mutex.c 
+ 1231  gcc more_fast_mutex.c -lpthread
+ 1232  ./a.out 
+ 1233  vim more_fast_mutex.c 
+ 1234  vim err_mutex.c 
+ 1235  gcc err_mutex.c -lpthread
+ 1236  ./a.out 
+ 1237  cd
+ 1238  cd Desktop/
+ 1239  ls
+ 1240  scp -r ./mutex/ rachapalli@172.16.5.178:
+ 1241  ls
+ 1242  cd alarm/
+ 1243  ls
+ 1244  cd
+ 1245  cd c
+ 1246  man pthread_mutex_trylock 
+ 1247  man pthread_cancel 
+ 1248  vim err_mutex.c 
+ 1249  ls
+ 1250  vim rec_mutex.c 
+ 1251  gcc rec_mutex.c 
+ 1252  gcc rec_mutex.c -lpthread
+ 1253  ./a.out 
+ 1254  vim rec_mutex.c 
+ 1255  gcc rec_mutex.c -lpthread
+ 1256  ./a.out 
+ 1257  vim rec_mutex.c 
+ 1258  gcc rec_mutex.c -lpthread
+ 1259  ./a.out 
+ 1260  vim rec_mutex.c 
+ 1261  gcc rec_mutex.c -lpthread
+ 1262  ./a.out 
+ 1263  vim rec_mutex.c 
+ 1264  ls
+ 1265  vim static_init.c 
+ 1266  vim mutex_get.c 
+ 1267  cpp mutex_get.c 
+ 1268  vim mutex_get.c 
+ 1269  cpp mutex_get.c 
+ 1270  vim mutex_get.c 
+ 1271  gcc mutex_get.c 
+ 1272  vim mutex_get.c 
+ 1273  gcc mutex_get.c 
+ 1274  vim mutex_get.c 
+ 1275  gcc mutex_get.c 
+ 1276  vim mutex_get.c 
+ 1277  gcc mutex_get.c 
+ 1278  ls
+ 1279  vim fast_mutex.c 
+ 1280  gcc fast_mutex.c 
+ 1281  gcc fast_mutex.c -lpthread
+ 1282  ./a.out 
+ 1283  vim fast_mutex.c 
+ 1284  gcc fast_mutex.c -lpthread
+ 1285  ./a.out 
+ 1286  vim fast_mutex.c 
+ 1287  cd ..
+ 1288  cd linux-4.4.2
+ 1289  ls
+ 1290  vim -t task_struct
+ 1291  cd ..
+ 1292  cd driver/
+ 1293  ls
+ 1294  cd expdriver/
+ 1295  ls
+ 1296  cd ..
+ 1297  ls
+ 1298  cd perfect_driver/
+ 1299  ls
+ 1300  mkdir signal
+ 1301  ls
+ 1302  cp -rf policy signal
+ 1303  cd signal/
+ 1304  ls
+ 1305  cd policy/
+ 1306  ls
+ 1307  cd source/
+ 1308  ls
+ 1309  vim app_kmod.c 
+ 1310  vim kmod.c 
+ 1311  ls
+ 1312  make
+ 1313  vim kmod.c 
+ 1314  su
+ 1315  cd c/linux-4.4.2
+ 1316  ls
+ 1317  vim -t task_struct
+ 1318  vim static_init.c 
+ 1319  vim fun_cond.c 
+ 1320  ssh rachapalli@172.16.5.178:
+ 1321  ssh rachapalli@172.16.5.178
+ 1322  man ./err_mutex/
+ 1323  man errno_abort
+ 1324  man err_abort
+ 1325  ls
+ 1326  cd ..
+ 1327  ls
+ 1328  mkdir cond
+ 1329  ls
+ 1330  cd synchr/
+ 1331  ls
+ 1332  cp static_init.c ../cond/
+ 1333  cd ..
+ 1334  cd cond/
+ 1335  ls
+ 1336  vim static_init.c 
+ 1337  gcc static_init.c 
+ 1338  vim static_init.c 
+ 1339  vim static_init.c -lpthread
+ 1340  gcc static_init.c -lpthread
+ 1341  ./a.out 
+ 1342  vim static_init.c 
+ 1343  gcc static_init.c -lpthread
+ 1344  ./a.out 
+ 1345  vim static_init.c 
+ 1346  gcc static_init.c -lpthread
+ 1347  ./a.out 
+ 1348  vim static_init.c 
+ 1349  gcc static_init.c -lpthread
+ 1350  ./a.out 
+ 1351  vim static_init.c 
+ 1352  gcc static_init.c -lpthread
+ 1353  ./a.out 
+ 1354  vim static_init.c 
+ 1355  gcc static_init.c -lpthread
+ 1356  ./a.out 
+ 1357  vim static_init.c 
+ 1358  gcc static_init.c -lpthread
+ 1359  vim static_init.c 
+ 1360  gcc static_init.c -lpthread
+ 1361  ./a.out 
+ 1362  vim static_init.c 
+ 1363  gcc static_init.c -lpthread
+ 1364  ./a.out 
+ 1365  vim static_init.c 
+ 1366  gcc static_init.c -lpthread
+ 1367  vim static_init.c 
+ 1368  gcc static_init.c -lpthread
+ 1369  ./a.out 
+ 1370  vim static_init.c 
+ 1371  gcc static_init.c -lpthread
+ 1372  ./a.out 
+ 1373  vim static_init.c 
+ 1374  gcc static_init.c -lpthread
+ 1375  ./a.out 
+ 1376  vim static_init.c 
+ 1377  gcc static_init.c -lpthread
+ 1378  ./a.out 
+ 1379  vim static_init.c 
+ 1380  gcc static_init.c -lpthread
+ 1381  ./a.out 
+ 1382  vim static_init.c 
+ 1383  gcc static_init.c -lpthread
+ 1384  vim static_init.c 
+ 1385  gcc static_init.c -lpthread
+ 1386  ./a.out 
+ 1387  vim static_init.c 
+ 1388  gcc static_init.c -lpthread
+ 1389  ./a.out 
+ 1390  vim static_init.c 
+ 1391  gcc static_init.c -lpthread
+ 1392  ./a.out 
+ 1393  gcc static_init.c -lpthread
+ 1394  ./a.out 
+ 1395  gcc static_init.c -lpthread
+ 1396  ./a.out 
+ 1397  gcc static_init.c -lpthread
+ 1398  ./a.out 
+ 1399  gcc static_init.c -lpthread
+ 1400  ./a.out 
+ 1401  gcc static_init.c -lpthread
+ 1402  ./.a
+ 1403  ./a.out 
+ 1404  gcc static_init.c -lpthread
+ 1405  ./a.out 
+ 1406  gcc static_init.c -lpthread
+ 1407  ./a.out 
+ 1408  ls
+ 1409  vim fun_cond.c
+ 1410  gcc fun_cond.c -lpthread
+ 1411  vim fun_cond.c
+ 1412  gcc fun_cond.c -lpthread
+ 1413  vim fun_cond.c
+ 1414  gcc fun_cond.c -lpthread
+ 1415  gcc fun_cond.c
+ 1416  gcc fun_cond.c -pthread
+ 1417  vim fun_cond.c
+ 1418  gcc fun_cond.c -pthread
+ 1419  vim fun_cond.c
+ 1420  gcc fun_cond.c -pthread
+ 1421  vim fun_cond.c
+ 1422  ls
+ 1423  gcc static_init.c 
+ 1424  gcc static_init.c -lpthread
+ 1425  gcc fun_cond.c -lpthread
+ 1426  vim fun_cond.c
+ 1427  gcc fun_cond.c -lpthread
+ 1428  vim fun_cond.c
+ 1429  gcc fun_cond.c -lpthread
+ 1430  vim fun_cond.c
+ 1431  gcc fun_cond.c -lpthread
+ 1432  ./a.out 
+ 1433  cd 
+ 1434  cd c/linux-4.4.2
+ 1435  vim -t timespec
+ 1436  cd ..
+ 1437  cd task/thread/
+ 1438  ls
+ 1439  cd ..
+ 1440  cd synchr/
+ 1441  ls
+ 1442  vim fast_mutex.c 
+ 1443  cpp fast_mutex.c -lpthread
+ 1444  cpp fast_mutex.c
+ 1445  ls
+ 1446  vim mutex_dyn.c
+ 1447  gcc mutex_dyn.c -lpthread
+ 1448  vim mutex_dyn.c
+ 1449  gcc mutex_dyn.c -lpthread
+ 1450  vim mutex_dyn.c
+ 1451  gcc mutex_dyn.c -lpthread
+ 1452  vim mutex_dyn.c
+ 1453  gcc mutex_dyn.c -lpthread
+ 1454  vim mutex_dyn.c
+ 1455  gcc mutex_dyn.c -lpthread
+ 1456  ./a.out 
+ 1457  vim mutex_dyn.c
+ 1458  gcc mutex_dyn.c -lpthread
+ 1459  ./a.out 
+ 1460  vim mutex_dyn.c
+ 1461  gcc mutex_dyn.c -lpthread
+ 1462  ./a.out 
+ 1463  vim mutex_dyn.c
+ 1464  gcc mutex_dyn.c -lpthread
+ 1465  ./a.out 
+ 1466  man pthread_mutex_destroy 
+ 1467  ls
+ 1468  cd ..
+ 1469  ls
+ 1470  cd thread/
+ 1471  ls
+ 1472  vim thrd_alarm.c 
+ 1473  gcc thrd_alarm.c -lpthread
+ 1474  ./a.out 
+ 1475  vim thrd_alarm.c 
+ 1476  gcc thrd_alarm.c -lpthread
+ 1477  ./a.out 
+ 1478  vim thrd_alarm.c 
+ 1479  man pthread_cond_signal 
+ 1480  man pthread_mutex_init 
+ 1481  man pthread_cond_signal 
+ 1482  cd c/task/synchr/
+ 1483  ls
+ 1484  cd ..
+ 1485  ls
+ 1486  cd cond/
+ 1487  ls
+ 1488  vim fun_cond.c 
+ 1489  cp fun_cond.c timed_fun.c
+ 1490  ls
+ 1491  vim timed_fun.c 
+ 1492  ssh rachapalli@172.16.5.178
+ 1493  ssh balireddi@172.16.5.182
+ 1494  ssh balireddi@172.16.5.182
+ 1495  cd c/task/
+ 1496  ls
+ 1497  mkdir real_thread
+ 1498  ls
+ 1499  cd thread/
+ 1500  ls
+ 1501  cd ..
+ 1502  ls
+ 1503  cd practice/
+ 1504  ls
+ 1505  cd ..
+ 1506  ls
+ 1507  cd signal/
+ 1508  ls
+ 1509  cd ..
+ 1510  ls
+ 1511  cd synchr/
+ 1512  ls
+ 1513  cd ..
+ 1514  ls
+ 1515  cd thread/
+ 1516  ls
+ 1517  vim example.c 
+ 1518  cd ..
+ 1519  ls
+ 1520  cd cond/
+ 1521  ls
+ 1522  cd ..
+ 1523  ls
+ 1524  cd real_thread/
+ 1525  ls
+ 1526  vim ass1.c
+ 1527  gcc ass1.c -lpthread
+ 1528  vim ass1.c
+ 1529  gcc ass1.c -lpthread
+ 1530  ./a.out 
+ 1531  vim ass1.c
+ 1532  gcc ass1.c -lpthread
+ 1533  ./a.out 
+ 1534  vim ass1.c
+ 1535  gcc ass1.c -lpthread
+ 1536  ./a.out 
+ 1537  vim ass1.c
+ 1538  gcc ass1.c -lpthread
+ 1539  vim ass1.c
+ 1540  gcc ass1.c -lpthread
+ 1541  ./a.out 
+ 1542  vim ass1.c
+ 1543  gcc ass1.c -lpthread
+ 1544  ./a.out 
+ 1545  vim ass1.c
+ 1546  gcc ass1.c -lpthread
+ 1547  ./a.out 
+ 1548  vim ass1.c
+ 1549  gcc ass1.c -lpthread
+ 1550  ./a.out 
+ 1551  vim ass1.c
+ 1552  gcc ass1.c -lpthread
+ 1553  ./a.out 
+ 1554  ls
+ 1555  vim ass2.c
+ 1556  vim ass1.c 
+ 1557  cp ass1.c ass2.c 
+ 1558  vim ass2.c 
+ 1559  cp ass1.c ass2.c 
+ 1560  vim ass2.c 
+ 1561  gcc ass2.c 
+ 1562  -lpthread
+ 1563  gcc ass2.c -lpthread
+ 1564  ./a.out 
+ 1565  vim ass2.c 
+ 1566  cp ass1.c ass2.c 
+ 1567  vim ass2.c 
+ 1568  gcc ass2.c -lpthread
+ 1569  vim ass2.c 
+ 1570  gcc ass2.c -lpthread
+ 1571  ./a.out 
+ 1572  vim ass2.c 
+ 1573  gcc ass2.c -lpthread
+ 1574  vim ass2.c 
+ 1575  gcc ass2.c -lpthread
+ 1576  ./a.out 
+ 1577  vim ass2.c 
+ 1578  gcc ass2.c -lpthread
+ 1579  vim ass2.c 
+ 1580  gcc ass2.c -lpthread
+ 1581  ./a.out 
+ 1582  gcc ass2.c -lpthread
+ 1583  ./a.out 
+ 1584  vim ass2.c 
+ 1585  gcc ass2.c -lpthread
+ 1586  ./a.out 
+ 1587  vim ass2.c 
+ 1588  gcc ass2.c -lpthread
+ 1589  ./a.out 
+ 1590  vim ass2.c 
+ 1591  gcc ass2.c -lpthread
+ 1592  vim ass2.c 
+ 1593  gcc ass2.c -lpthread
+ 1594  ./a.out 
+ 1595  vim ass2.c 
+ 1596  vim ass1.c 
+ 1597  gcc ass1.c -lpthread
+ 1598  ./a.out 
+ 1599  vim ass1.c 
+ 1600  vim ass2.c 
+ 1601  gcc ass1.c -lpthread
+ 1602  ./a.out 
+ 1603  vim ass2.c 
+ 1604  gcc ass1.c -lpthread
+ 1605  ./a.out 
+ 1606  vim ass2.c 
+ 1607  gcc ass1.c -lpthread
+ 1608  ./a.out 
+ 1609  vim ass2.c 
+ 1610  gcc ass2.c -lpthread
+ 1611  ./a.out 
+ 1612  vim ass2.c 
+ 1613  gcc ass2.c -lpthread
+ 1614  ./a.out 
+ 1615  vim ass2.c 
+ 1616  gcc ass2.c -lpthread
+ 1617  ./a.out 
+ 1618  vim ass2.c 
+ 1619  gcc ass2.c -lpthread
+ 1620  ./a.out 
+ 1621  vim ass2.c 
+ 1622  gcc ass2.c -lpthread
+ 1623  ./a.out 
+ 1624  vim ass2.c 
+ 1625  gcc ass2.c -lpthread
+ 1626  ./a.out 
+ 1627  vim ass2.c 
+ 1628  gcc ass2.c -lpthread
+ 1629  ./a.out 
+ 1630  vim ass2.c 
+ 1631  gcc ass2.c -lpthread
+ 1632  ./a.out 
+ 1633  vim ass2.c 
+ 1634  gcc ass2.c -lpthread
+ 1635  ./a.out 
+ 1636  vim ass2.c 
+ 1637  gcc ass2.c -lpthread
+ 1638  ./a.out 
+ 1639  vim ass2.c 
+ 1640  gcc ass2.c -lpthread
+ 1641  ./a.out 
+ 1642  vim ass2.c 
+ 1643  gcc ass2.c -lpthread
+ 1644  ./a.out 
+ 1645  vim ass2.c 
+ 1646  gcc ass2.c -lpthread
+ 1647  ./a.out 
+ 1648  vim ass2.c 
+ 1649  gcc ass2.c -lpthread
+ 1650  ./a.out 
+ 1651  vim ass2.c 
+ 1652  gcc ass2.c -lpthread
+ 1653  ./a.out 
+ 1654  vim ass2.c 
+ 1655  gcc ass2.c -lpthread
+ 1656  ./a.out 
+ 1657  vim ass2.c 
+ 1658  gcc ass2.c -lpthread
+ 1659  ./a.out 
+ 1660  vim ass2.c 
+ 1661  gcc ass2.c -lpthread
+ 1662  ./a.out 
+ 1663  vim ass2.c 
+ 1664  gcc ass2.c -lpthread
+ 1665  ./a.out 
+ 1666  gcc ass2.c -lpthread
+ 1667  ./a.out 
+ 1668  gcc ass2.c -lpthread
+ 1669  ./a.out 
+ 1670  cd ..
+ 1671  ls
+ 1672  cd cond/
+ 1673  ls
+ 1674  vim static_init.c 
+ 1675  gcc static_init.c 
+ 1676  gcc static_init.c -pthread
+ 1677  ./a.out 
+ 1678  vim static_init.c 
+ 1679  gcc static_init.c -pthread
+ 1680  ./a.out 
+ 1681  vim static_init.c 
+ 1682  gcc static_init.c -pthread
+ 1683  ./a.out 
+ 1684  vim static_init.c 
+ 1685  man pthread_attr_getschedpolicy 
+ 1686  man pthread_attr_getschedparam 
+ 1687  man pthread_attr_getschedpolicy 
+ 1688  man pthread_attr_getschedparam 
+ 1689  man pthread_getschedparam 
+ 1690  man pthread_attr_setinheritsched 
+ 1691  man pthread_getschedparam 
+ 1692  man pthread_attr_setinheritsched 
+ 1693  man pthread_getschedparam 
+ 1694  man pthread_create 
+ 1695  man pthread_getschedparam 
+ 1696  man pthread_create 
+ 1697  vim ass1.c 
+ 1698  gcc ass1.c -lpthread
+ 1699  ./a.out 
+ 1700  vim ass1.c 
+ 1701  gcc ass1.c -lpthread
+ 1702  ./a.out 
+ 1703  vim ass1.c 
+ 1704  man pthread_getschedparam 
+ 1705  man sched_getscheduler 
+ 1706  man pthread_attr_setinheritsched 
+ 1707  man sched_setscheduler 
+ 1708  man pthread_attr_getschedparam 
+ 1709  man pthread_getschedparam 
+ 1710  man pthread_setschedpio
+ 1711  man pthread_setschedprio 
+ 1712  man pthread_getschedparam 
+ 1713  man pthread_setschedp
+ 1714  man pthread_setschedprio 
+ 1715  ls
+ 1716  gcc assignment2.c -lpthread
+ 1717  ./a.out 
+ 1718  su
+ 1719  ls
+ 1720  cd c
+ 1721  cd task/
+ 1722  ls
+ 1723  cd real_thread/
+ 1724  ls
+ 1725  vim ass2.c 
+ 1726  gcc ass2.c -lpthread
+ 1727  ls
+ 1728  vim ass2.c 
+ 1729  ls
+ 1730  cp ass1.c ass3.c
+ 1731  vim ass3.c 
+ 1732  gcc ass3.c -lpthread
+ 1733  ./a.out 
+ 1734  vim ass3.c 
+ 1735  gcc ass3.c -lpthread
+ 1736  ./a.out 
+ 1737  vim ass3.c 
+ 1738  vim ass1.c 
+ 1739  vim ass3.c 
+ 1740  gcc ass3.c -lpthread
+ 1741  ./a.out 
+ 1742  vim ass3.c 
+ 1743  gcc ass3.c -lpthread
+ 1744  ./a.out 
+ 1745  vim ass3.c 
+ 1746  gcc ass3.c -lpthread
+ 1747  ./a.out 
+ 1748  vim ass3.c 
+ 1749  gcc ass3.c -lpthread
+ 1750  ./a.out 
+ 1751  vim ass3.c 
+ 1752  gcc ass3.c -lpthread
+ 1753  ./a.out 
+ 1754  ls
+ 1755  cd ..
+ 1756  ls
+ 1757  cd thread/
+ 1758  ls
+ 1759  vim forkalarm.c 
+ 1760  gcc forkalarm.c 
+ 1761  ./a.out 
+ 1762  vim forkalarm.c 
+ 1763  ls
+ 1764  vim threadalarm.c 
+ 1765  vim thrd_alarm.c 
+ 1766  ls
+ 1767  cd ..
+ 1768  ls
+ 1769  cd real_thread/
+ 1770  ls
+ 1771  vim ass1.c 
+ 1772  gcc ass1.c -lpthread
+ 1773  ./a.out
+ 1774  vim ass1.c 
+ 1775  gcc ass1.c -lpthread
+ 1776  ./a.out
+ 1777  mv ass1.c assignment1.c
+ 1778  mv ass2.c assignment2.c
+ 1779  mv ass3.c assignment3.c
+ 1780  ls
+ 1781  vim assignment1.c 
+ 1782  ls
+ 1783  vim assignment2.c 
+ 1784  gcc assignment2.c -lpthread
+ 1785  ./a.out 
+ 1786  vim assignment2.c 
+ 1787  gcc assignment2.c -lpthread
+ 1788  ./a.out 
+ 1789  vim assignment2.c 
+ 1790  gcc assignment2.c -lpthread
+ 1791  ./a.out 
+ 1792  vim assignment2.c 
+ 1793  gcc assignment2.c -lpthread
+ 1794  ./a.out 
+ 1795  vim assignment2.c 
+ 1796  gcc assignment2.c -lpthread
+ 1797  ./a.out 
+ 1798  vim assignment2.c 
+ 1799  gcc assignment2.c -lpthread
+ 1800  ./a.out 
+ 1801  vim assignment2.c 
+ 1802  gcc assignment2.c -lpthread
+ 1803  ./a.out 
+ 1804  vim assignment2.c 
+ 1805  gcc assignment2.c -lpthread
+ 1806  ./a.out 
+ 1807  vim assignment2.c 
+ 1808  gcc assignment2.c -lpthread
+ 1809  ./a.out 
+ 1810  vim assignment2.c 
+ 1811  gcc assignment2.c -lpthread
+ 1812  ./a.out 
+ 1813  vim assignment2.c 
+ 1814  gcc assignment2.c -lpthread
+ 1815  ./a.out 
+ 1816  vim assignment2.c 
+ 1817  gcc assignment2.c -lpthread
+ 1818  ./a.out 
+ 1819  vim assignment2.c 
+ 1820  gcc assignment2.c -lpthread
+ 1821  vim assignment2.c 
+ 1822  gcc assignment2.c -lpthread
+ 1823  ./a.out 
+ 1824  vim assignment2.c 
+ 1825  gcc assignment2.c -lpthread
+ 1826  ./a.out 
+ 1827  vim assignment2.c 
+ 1828  gcc assignment2.c -lpthread
+ 1829  ./a.out 
+ 1830  vim assignment2.c 
+ 1831  gcc assignment2.c -lpthread
+ 1832  ./a.out 
+ 1833  vim assignment2.c 
+ 1834  gcc assignment2.c -lpthread
+ 1835  vim assignment2.c 
+ 1836  gcc assignment2.c -lpthread
+ 1837  ./a.out 
+ 1838  vim assignment2.c 
+ 1839  gcc assignment2.c -lpthread
+ 1840  ./a.out 
+ 1841  vim assignment2.c 
+ 1842  gcc assignment2.c -lpthread
+ 1843  ./a.out 
+ 1844  vim assignment2.c 
+ 1845  gcc assignment2.c -lpthread
+ 1846  ./a.out 
+ 1847  vim assignment2.c 
+ 1848  gcc assignment2.c -lpthread
+ 1849  ./a.out 
+ 1850  vim assignment2.c 
+ 1851  gcc assignment2.c -lpthread
+ 1852  vim assignment2.c 
+ 1853  gcc assignment2.c -lpthread
+ 1854  ./a.out 
+ 1855  vim assignment2.c 
+ 1856  gcc assignment2.c -lpthread
+ 1857  ./a.out 
+ 1858  vim assignment2.c 
+ 1859  gcc assignment2.c -lpthread
+ 1860  ./a.out 
+ 1861  vim assignment2.c 
+ 1862  gcc assignment2.c -lpthread
+ 1863  vim assignment2.c 
+ 1864  gcc assignment2.c -lpthread
+ 1865  ./a.out 
+ 1866  vim assignment2.c 
+ 1867  su
+ 1868  vim assignment2.c 
+ 1869  gcc assignment2.c -lpthread
+ 1870  ./a.out 
+ 1871  su
+ 1872  vim assignment2.c 
+ 1873  cat /proc/9128/sched
+ 1874  cat /proc/9156/sched
+ 1875  cat /proc/9166/sched
+ 1876  su
+ 1877  ls
+ 1878  vim assignment4.c 
+ 1879  ls
+ 1880  mv assignment4.c assignment5.c
+ 1881  vim assignment5.c 
+ 1882  su
+ 1883  vim assignment5.c 
+ 1884  ls
+ 1885  vim assignment5.c 
+ 1886  ls
+ 1887  vim assignment1.c 
+ 1888  gcc assignment1.c -lpthread
+ 1889  ./a.out 
+ 1890  vim assignment1.c 
+ 1891  gcc assignment1.c -lpthread
+ 1892  ./a.out 
+ 1893  vim assignment1.c 
+ 1894  gcc assignment1.c -lpthread
+ 1895  ./a.out 
+ 1896  vim assignment1.c 
+ 1897  gcc assignment1.c -lpthread
+ 1898  ./a.out 
+ 1899  su
+ 1900  vim assignment1.c 
+ 1901  gcc assignment1.c -lpthread
+ 1902  ./a.out 
+ 1903  vim assignment1.c 
+ 1904  gcc assignment1.c -lpthread
+ 1905  ./a.out 
+ 1906  vim assignment1.c 
+ 1907  gcc assignment1.c -lpthread
+ 1908  ./a.out 
+ 1909  vim assignment1.c 
+ 1910  gcc assignment1.c -lpthread
+ 1911  ./a.out 
+ 1912  vim assignment1.c 
+ 1913  gcc assignment1.c -lpthread
+ 1914  ./a.out 
+ 1915  vim assignment1.c 
+ 1916  gcc assignment1.c -lpthread
+ 1917  ./a.out 
+ 1918  vim assignment1.c 
+ 1919  gcc assignment1.c -lpthread
+ 1920  ./a.out 
+ 1921  vim assignment1.c 
+ 1922  gcc assignment1.c -lpthread
+ 1923  ./a.out 
+ 1924  vim assignment1.c 
+ 1925  vim assignment5.c 
+ 1926  rm assignment5.c 
+ 1927  ls
+ 1928  cp assignment1.c assignment4.c
+ 1929  vim assignment4.c 
+ 1930  gcc assignment4.c -lpthread
+ 1931  vim assignment4.c 
+ 1932  gcc assignment4.c -lpthread
+ 1933  ./a.out 
+ 1934  vim assignment4.c 
+ 1935  vim assignment6.c 
+ 1936  gcc assignment6.c -lpthread
+ 1937  vim assignment6.c 
+ 1938  gcc assignment6.c -lpthread
+ 1939  vim assignment6.c 
+ 1940  gcc assignment6.c -lpthread
+ 1941  vim assignment6.c 
+ 1942  gcc assignment6.c -lpthread
+ 1943* ./a.out BBBBBBBB
+ 1944  vim assignment6.c 
+ 1945  gcc assignment6.c -lpthread
+ 1946  ./a.out 
+ 1947  vim assignment6.c 
+ 1948  gcc assignment6.c -lpthread
+ 1949  ./a.out 
+ 1950  vim assignment4.c 
+ 1951  vim assignment2.c 
+ 1952  vim assignment1.c 
+ 1953  gcc assignment1.c -lpthread
+ 1954  ./a.out 
+ 1955  vim assignment1.c 
+ 1956  gcc assignment1.c -lpthread
+ 1957  vim assignment1.c 
+ 1958  gcc assignment1.c -lpthread
+ 1959  ./a.out 
+ 1960  vim assignment1.c 
+ 1961  gcc assignment1.c -lpthread
+ 1962  ./a.out 
+ 1963  vim assignment1.c 
+ 1964  gcc assignment1.c -lpthread
+ 1965  ./a.out 
+ 1966  vim assignment1.c 
+ 1967  gcc assignment1.c -lpthread
+ 1968  ./a.out 
+ 1969* vim assignment1.c BBBBBBBBBBBBBBBB
+ 1970  gcc assignment1.c -lpthread
+ 1971  ./a.out 
+ 1972  vim assignment1.c 
+ 1973  gcc assignment1.c -lpthread
+ 1974  ./a.out 
+ 1975  vim assignment1.c 
+ 1976  gcc assignment1.c -lpthread
+ 1977  vim assignment1.c 
+ 1978  gcc assignment1.c -lpthread
+ 1979  vim assignment1.c 
+ 1980  gcc assignment1.c -lpthread
+ 1981  ./a.out 
+ 1982  vim assignment1.c 
+ 1983  gcc assignment1.c -lpthread
+ 1984  vim assignment1.c 
+ 1985  gcc assignment1.c -lpthread
+ 1986  ./a.out 
+ 1987  vim assignment1.c 
+ 1988  gcc assignment1.c -lpthread
+ 1989  su
+ 1990  man pthread_attr_getschedpolicy
+ 1991  man pthread_attr_getschedparam
+ 1992  man pthread_attr_getschedpolicy
+ 1993  man pthread_attr_getschedparam
+ 1994  ssh ganga@172.16.5.227
+ 1995  man pthread_attr_getschedpolicy 
+ 1996  man pthread_attr_setschedparam 
+ 1997  man pthread_attr_setinheritsched 
+ 1998  man pthread_attr_getschedpolicy 
+ 1999  man pthread_attr_setschedparam 
+ 2000  man sigaction
+ 2001  cd c
+ 2002  cd task/
+ 2003  ls
+ 2004  cd thread/
+ 2005  ls
+ 2006  vim thrd_alarm.c 
+ 2007  gcc thrd_alarm.c -lpthread
+ 2008  ./a.out 
+ 2009  gcc thrd_alarm.c -lpthread
+ 2010  ./a.out 
+ 2011  vim thrd_alarm.c 
+ 2012  kill -9 4204
+ 2013  man sigemptyset 
+ 2014  kill -2 4274
+ 2015  kill -9 4274
+ 2016  kill -2 4294
+ 2017  kill -9 4294
+ 2018  man sigemptyset 
+ 2019  kill -9 4294
+ 2020  kill -9 4326
+ 2021  kill -9 4337
+ 2022  kill -2 4337
+ 2023  kill -2 4338
+ 2024  kill -7 4338
+ 2025  kill -9 4338
+ 2026  kill -l
+ 2027  kill -1 4340
+ 2028  kill -2 4340
+ 2029  kill -3 4340
+ 2030  kill -6 4340
+ 2031  kill -19 4340
+ 2032  man sigemptyset 
+ 2033  kill -l
+ 2034  kill -3 4393
+ 2035  kill -4 4393
+ 2036  kill -5 4396
+ 2037  kill -14 4399
+ 2038  kill -2 4400
+ 2039  kill -1 4415
+ 2040  man sigdelset 
+ 2041  kill -2 4456
+ 2042  kill -1 4456
+ 2043  kill -2 4459
+ 2044  kill -1 4459
+ 2045  kill -1 4467
+ 2046  kill -3 4467
+ 2047  kill -3 4468
+ 2048* 
+ 2049  kill -4 4468
+ 2050  man sigdelset 
+ 2051  man pthread_mutex_init
+ 2052  kill -1 4456
+ 2053  history
+ 2054  history > abc

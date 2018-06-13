@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+add_big	insertion.c	/^int add_big(struct tag **p)$/;"	f
+add_end	inser_end.c	/^int add_end(struct tag **p)$/;"	f
+cir_add_big	cir_inser_big.c	/^int cir_add_big(struct tag **p)$/;"	f
+cir_add_end	cir_inser_end.c	/^int cir_add_end(struct tag **p)$/;"	f
+cir_delete	cir_delete.c	/^int cir_delete(void)$/;"	f
+cir_dub_add_big	cir_dub_big.c	/^int cir_dub_add_big(struct tag1 **p)$/;"	f
+cir_dub_add_end	cir_dub_end.c	/^int cir_dub_add_end(struct tag1 **p)$/;"	f
+cir_dub_big	cir_dub_big.c	/^int cir_dub_big(void)$/;"	f
+cir_dub_delete	cir_dub_delete.c	/^int cir_dub_delete(void)$/;"	f
+cir_dub_end	cir_dub_end.c	/^int cir_dub_end(void)$/;"	f
+cir_dub_mid	cir_dub_mid.c	/^int cir_dub_mid(void)$/;"	f
+cir_inser_big	cir_inser_big.c	/^int cir_inser_big(void)$/;"	f
+cir_inser_end	cir_inser_end.c	/^int cir_inser_end(void)$/;"	f
+cir_mid	cir_mid.c	/^int cir_mid(void)$/;"	f
+delete_node	delete.c	/^int delete_node(void)$/;"	f
+dub_add_big	dub_big.c	/^int dub_add_big(struct tag1 **p)$/;"	f
+dub_add_end	dub_end.c	/^int dub_add_end(struct tag1 **p)$/;"	f
+dub_delete	dub_delete.c	/^int dub_delete(void)$/;"	f
+dub_mid	dub_mid.c	/^int dub_mid(void)$/;"	f
+input_dub_inser_big	dub_big.c	/^int input_dub_inser_big(void)$/;"	f
+input_dub_inser_end	dub_end.c	/^int input_dub_inser_end(void)$/;"	f
+input_inser_big	insertion.c	/^int input_inser_big(void)$/;"	f
+input_inser_end	inser_end.c	/^int input_inser_end(void)$/;"	f
+inser_mid	inser_mid.c	/^int inser_mid(void)$/;"	f
+main	main.c	/^int main(void)$/;"	f
+myatoi	anand.c	/^int myatoi(void )$/;"	f
+print	print.c	/^int print(struct tag *p)$/;"	f
+print1	print.c	/^int print1(struct tag1 *p)$/;"	f
