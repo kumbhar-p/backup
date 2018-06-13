@@ -1,0 +1,1 @@
+cmd_/home/laxman/Desktop/lcd/LCD/lcd.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/laxman/Desktop/lcd/LCD/lcd.ko /home/laxman/Desktop/lcd/LCD/lcd.o /home/laxman/Desktop/lcd/LCD/lcd.mod.o

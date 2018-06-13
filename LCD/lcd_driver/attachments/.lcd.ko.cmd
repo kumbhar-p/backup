@@ -1,0 +1,1 @@
+cmd_/home/laxman/punam1/LCD/lcd_driver/attachments/lcd.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/laxman/punam1/LCD/lcd_driver/attachments/lcd.ko /home/laxman/punam1/LCD/lcd_driver/attachments/lcd.o /home/laxman/punam1/LCD/lcd_driver/attachments/lcd.mod.o
