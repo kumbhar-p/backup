@@ -1,0 +1,21 @@
+class:user defined data type,blueprint of an object
+to define a class, class keyword is used
+class <classname>:
+#class components
+1.state or attributes or data members or 
+in python:instance variables
+2.behaviour or member functions or
+python:methods
+
+constructor method is used to create an instance
+In Python: __init__ is constructor method
+
+->Destructor method is used to destroy an object 
+In Python: __del__ is destructor method
+
+->this pointer points to current object
+In python: self
+->****'SELF' IS FIRST ARGUMENT TO ALL THE METHODS IN PYTHON****
+->Instance variables are specified inside __init__ method
+
+

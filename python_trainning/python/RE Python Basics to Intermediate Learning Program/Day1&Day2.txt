@@ -1,0 +1,821 @@
+Python[Day - 1]
+***************
+
+>>>print "Welcome to python training"
+
+* What is print?
+
+Creation and over writing
+>>>x = 10
+>>>x = 30
+
+>>>x = 45
+>>>str(x)
+
+* What is str?
+
+User input 
+-----------
+
+raw_input ---> Built in function used for string 
+input ----> Fetches number
+
+
+VARIABLES
+----------
+>>>i1 = 10
+>>>f1 = 12.34
+>>>str1 = 'abc'/"abc"/"""abc"""
+
+>>>2+3 = 
+>>>'2' + '3' = 
+>>>'2' * 3 = 
+
+>>>a = 3 
+>>>b = 4
+
+>>>c = a or b
+>>>print c
+
+* What happens when expression1 is false in and/or operator
+????
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+not x Returns True if x is True, False otherwise
+x and y Returns x if x is False, y otherwise
+x or y  Returns y if x is False, x otherwise
+ or --> If exp1 is false ,exp2 is not evaluated
+ and --> If exp1 is True only then exp2 is evaluated
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+Integer and float 
+-------------------
+>>> print 99/100
+>>> print 99/100.0
+>>> print 1+2*3/4.0-5
+>>> print 9.322e-36j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Type
+-----
+>>>result = 'Global' + 'Edge'
+>>>result += 1
+
+>>>type(result)
+
+
+Type conversion
+-----------------
+>>> i = 42
+>>> type(i)
+>>> f = float(i)
+>>> print f
+>>> type(f)
+
+
+
+
+
+
+
+
+
+
+Decision making
+----------------
+>>> x = 5
+>>> if x == 5:
+		print "x is 5" -----> Indentation is very important in python
+
+		
+		
+		
+		
+		
+		
+		
+
+
+
+		
+Check for other comparison operators
+
+
+
+
+
+1)User enters a day of the week , if the entered day is Monday to
+ Friday then print a message it is "Weekday" ,
+If entered day is Saturday print "Go to movie" , 
+If entered day is Sunday print "Take rest".
+
+2)simple calc
+------------
+	1. add
+	2. sub
+	3. mul	
+	4. div
+	5. go back
+	
+	
+	
+	
+	
+	
+	
+	
+Loops
+------
+while (expression):
+	statements
+TRY
+---
+count = 0
+while (count < 9):
+   print 'The count is:', count
+   count = count + 1
+TRY
+---
+var = 1
+while var == 1 :  
+   num = raw_input("Enter a number  :")
+   print "You entered: ", num
+
+for iteration_var in sequence:
+	statements
+
+for letter in 'Global':     
+   print 'Current Letter :', letter	
+   
+sequence contains an expression list.
+
+
+Loop control statements
+------------------------
+break 
+continue
+
+Use break and continue in loops and experiment.
+
+Strings
+--------
+Reading and converting
+----------------------
+
+>>>name = raw_input("Enter:")
+>>>Enter:GlobalEdge
+>>>print name
+
+>>>name = raw_input("Enter:")
+>>>Enter:123
+>>>x = name - 10
+????
+>>>x = int(name) - 10
+>>>print x
+
+str class
+---------
+A class can hold data and functions
+How do we access a class X
+	X.i -----> attribute
+	X.fun() -----> method
+	
+str is a built-in class in Python
+
+How to access every element in the string ?
+
+>>>str = "GlobalEdge"
+>>>print str[0]
+??????
+>>>str[0] = "H"
+??????
+>>>print str[10]
+??????
+
+
+Strings are immutable.
+----------------------
+str1 = "Global"
+str1 = "Edge"
+
+How do you check the memory location of variable str1?
+
+>>>str1 = "Global"
+>>>print id(str1)
+>>>str1 = "Edge"
+>>>print id(str1)
+
+Length of strings
+-----------------
+>>>str1 = "GlobalEdge"
+>>>print len(str1)
+?????
+
+Other built-in functions
+-----------------------
+How to know builtin functions?
+>>>dir(__builtins__)
+
+>>>dir(str1) ----> Gives everything which is part of str1
+>>>type(str1.replace)
+>>>help(str1.replace)
+
+[ : optional
+--> : return value.
+
+Using a while loop and for loop and len function print
+ the characters of the string.
+Do dir(str1) and experiment with different methods.
+
+Other string functions
+----------------------
+
+>>>for letter in "Global":
+>>>		print letter
+
+letter is an iteration variable
+
+>>>str1 = "GlobalEdge"
+>>>pos = str1.find("Ed")
+
+>>>str2 = "GlobalEdge"
+>>>str2.replace("Global","Altran")
+>>>print str2
+>>>nstr2 = str2.replace("Global","Altran")
+>>>print nstr2
+
+Stripping Whitespace
+--------------------
+
+>>>str1 = "        Python  "
+>>>str1.lstrip()
+>>>str1.rstrip()
+>>>str1.strip()
+
+
+
+List
+----
+>>> x = 2
+>>> x = 3
+
+*Is this a collection?
+
+*Did we come across list previously ?
+
+>>>for letter in "Global":
+>>>		print letter
+
+
+Lists are mutable
+-----------------
+>>>list1 = [10,20,30]
+>>>list2 = [10,"hi",30]
+>>>list2[1] = 20
+
+Find the length of list
+-----------------------
+>>>len(list1)
+
+
+
+
+
+
+
+
+
+range() function
+----------------
+How can you get help on this function?
+
+
+
+
+
+
+
+
+
+
+
+>>>help() ---> Takes you to the help prompt
+
+
+
+
+
+What does range return?
+
+Questionnaire
+-------------
+1)Print the whole list
+2)How will you print list elements one by one
+3)Insert an element at the beginning of the list using method
+4)Insert an element at a given position
+5)Insert an element at end
+6)Delete element at a given position
+7)Delete an element at a given position and
+ print the element 
+8)Delete an element by value
+9)Print the length of the list.
+
+
+
+
+
+
+
+
+
+
+
+
+Slicing
+--------
+>>>list1 = [42,12,33,54,10,6]
+>>>list1[1:3]
+>>>list [ :4]
+>>>list [3: ]
+>>>list[:]
+
+* The second number is up to but not including
+
+list1 = list   () ---->creates a list
+
+How do you know the methods you can use on list?
+
+
+
+
+
+
+
+
+
+
+
+
+
+Generic form
+---------------
+
+              lst1[             :                  :                 ]
+                      start           end               step
+
+>>>print lst1[1: :2] 
+
+
+
+
+
+
+
+
+
+
+
+
+Negative indices
+------------------------
+lst1=[10,20,30]
+print lst1[0],  lst1[1],  lst1[2]
+print lst1[-1], lst1[-2], lst1[-3]
+
+
+
+
+1)What is the difference between the following two tests:
+ w.isupper() 
+and not w.islower()?
+2)Write the slice expression that extracts the 
+last two words 
+of text.
+3)Try sets
+	>>> x = set("Python classes")
+	>>> x
+	>>> type(x)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+Operators on list
+-----------------
+in
+not in
+
+>>> 9 in list1
+>>> 9 not in list1
+
+Built in functions on lists
+---------------------------
+len,max,min,sum,
+
+split()
+-------
+>>>life = "Believe in yourself"
+>>>success = life.split()
+>>>print success
+
+How to print each of these words separately?
+
+
+>>life = "Believe;in;yourself"
+>>>sucess = life.split()
+>>>print success
+
+
+When delimiter is not specified multiple spaces are considered as delimiter.
+
+
+>>>sucess = life.split(;)
+>>>print success
+
+Objects and values:
+------------------
+
+>>>a = "Global"
+>>>b = "Global"
+>>>id(a)
+>>>id(b)
+
+>>>a = [1,2,3]
+>>>b = [1,2,3]
+>>>id(a)
+>>>id(b)
+
+Aliasing
+--------
+>>> a = [1, 2, 3]
+>>> b = a
+
+>>> b[0] = 5
+>>> print a
+
+It is safer to avoid aliasing
+
+Cloning lists
+-------------
+>>> a = [1, 2, 3]
+>>> b = a[:]
+>>> print b
+
+>>> b[0] = 5
+>>> print a
+
+Nested lists
+------------
+>>>list = ["hello", 2.0, 5, [10, 20]]
+>>>list[3]
+>>> elt = list[3]
+>>> elt[0]
+
+>>> list[3][1]
+
+
+
+Dictionaries
+------------
+>>>dct1 = {"Name":Shubham, "Age":40, "Practice": "Platform"}
+(or)
+>>>dct1 = dict()
+>>>dct1["Name"] = "Sailesh"
+>>>dct1["Age"] = 23
+>>>dct1["Practice"] = "Platform"
+>>>print  dct1
+
+>>>dct1["Practice"] = "Connectivity" #Updates the values
+>>>del dct1["Age"]                   #Deletes the pair 
+
+what is del?
+can del be used on list as well ?
+
+Retrieve the list of Keys and values.
+>>>print dict1.keys()
+>>>print dict1.values()
+
+Print the pairs in a dictionary using for loop.
+
+built - ins on dictionary : all,any,len,cmp,sorted
+
+
+Questionnaire:
+--------------
+Create the following:
+An empty list.
+List with one element
+Empty tuple
+Tuple with 1 element
+An empty dictionary
+Dictionary with 1 element
+
+Tuple
+-----
+>>>tup1 = (5,4,3)
+>>>tup1[2] = 0
+
+Unlike a list, once you create a tuple, you cannot alter its
+contents - similar to a string
+
+How to check the operations that you can perform on a tuple?
+
+Tuples and Assignment operation
+-------------------------------
+>>>(x,y) = (4,45)
+>>>print y
+
+The items() method in
+dictionaries returns a
+list of (key, value)
+tuples
+
+>>>dict1 = {"a":10, "b": 20,"c": 5}
+>>>tup1 = dict1.items()
+>>>tup1
+
+
+Can we sort a tuple?
+
+*List of tuples can be sorted.
+
+>>>tup1.sort()          #list of tuples can be sorted
+>>>tup1
+
+Check with sorted.
+
+>>>tup1 = sorted(dict1.items())
+>>>tup1
+
+>>>for k, v in sorted(d.items()):
+... print k, v
+
+The comparison operators work with tuples
+
+Sequence
+--------
+It is a collection of list and tuple.
+List within a list is also a sequence.
+
+
+Import
+------
+>>>print pi
+?????
+>>>import math
+>>>print math.pi
+
+Work on os module
+
+
+
+
+
+
+
+
+
+Questionnaire
+-------------
+
+1. Print names of all a) keywords b) builtins c) modules
+2. Study builtins a) range b) cmp
+3. Given a number in decimal form (base 10), print the
+    value in different number systems (binary, hexa, 
+	octal)
+4. Print the value of a) pi b) sin 90 degrees
+5. Write a program to clear the screen. Code needs to work
+    both on windows and linux.
+6. Write a program to print python version
+7.a) take the back up b) test your code on windows c) with 3.x 
+
+
+
+
+
+
+
+
+
+
+
+
+a.b ---> ???
+
+
+
+
+
+
+
+
+
+
+
+
+How do you know the type?
+Check if import is there before a.b
+(or)
+Do type on a
+-----------------------------------------------------------------------
+very common   very frequent         keyword           	  print
+very common   less frequent         builtin               input
+less common   less frequent     var/fn=>module      pi/sin=>math
+-----------------------------------------------------------------------
+
+
+
+
+User Defined Functions
+----------------------
+$vi function1.py
+
+def test1():
+	print "I am test1"
+test1()
+
+-----------
+def test2():
+	return "I am  in test2"
+	
+x = test2()
+(or)
+print test2()
+
+------------
+def test3(a,b)
+	print a,b
+test3(10,20)
+
+-----------------
+x = 30
+y = 40
+
+def test4(a,b):
+	print a,b
+
+test4(x,y)
+test4('x',y)
+-----------------
+def test4(a,b):
+	print a,b
+test4(x,y)
+x = 30
+y = 40
+
+Syntax:
+-------
+
+def functionname( parameters ):
+   "function_docstring"
+   function_suite
+   return [expression]
+   
+   
+Keyword arguments
+-----------------
+This allows you to skip arguments or place them out of order 
+
+# Function definition is here
+def printinfo( name, age ):
+   "This prints a passed info into this function"
+   print "Name: ", name
+   print "Age ", age
+   return;
+
+# Now you can call printinfo function
+printinfo( age=50, name="miki" )
+
+
+
+Default arguments
+-----------------
+
+# Function definition is here
+def printinfo( name, age = 35 ):
+   "This prints a passed info into this function"
+   print "Name: ", name
+   print "Age ", age
+   return;
+
+# Now you can call printinfo function
+printinfo( age=50, name="miki" )
+printinfo( name="miki" )
+
+
+
+
+
+
+
+
+Variable length arguments
+-------------------------
+# Function definition is here
+def printinfo( arg1, *vartuple ):
+    print "Output is: "
+   print arg1
+   for var in vartuple:
+      print var
+   return
+
+# Now you can call printinfo function
+printinfo( 10 )
+printinfo( 70, 60, 50 )
+
+
+
+
+
+
+Returning multiple values
+-------------------------
+def fun():
+    str1 = "GlobalEdge"
+    x   = 20
+    return str1, x;  # Return tuple
+	
+Try returns a list similarly
+	return [str,x]
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Recursion
+----------
+#recursion is available
+#threshold => 990 times
+#implement factorial a) using iteration b) using recursion
+
+def   fn1():
+	print "hi"
+	fn1()
+fn1()
+
+
+
+Command line arguments
+----------------------
+
+import sys
+program_name = sys.argv[0]
+arguments = sys.argv[1:]
+count = len(arguments)
+
+Compute the sum of numbers given as command line arguments.
+

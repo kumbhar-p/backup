@@ -1,0 +1,88 @@
+1)Try using the Python interpreter as a calculator, and 
+typing expressions like 12 / (4 + 1).
+2)Generate the following:
+	[a] All prime number upto the specified limit.
+	[b] All Armstrong number between 1 and 500
+	[c] Fibonacci series upto a specified limit
+3)Accept a string from the user and perform the following:
+	[a] Count the number of VOWELS and CONSONANTS.
+	[b] Check if the string is a PALINDROME string or not.
+4)String Processing
+	a. Define a string and assign it to a variable, e.g., my_string
+	= 'My String' (but put something more interesting in the string). 
+		Print the contents of this variable in two ways
+		first by simply typing the variable name and pressing Enter
+		then by using the print statement.
+	b. Try adding the string to itself using my_string + my_string,
+	or multiplying it by a number, e.g., my_string * 3.
+		Notice that the strings are joined together without any 
+		spaces. How could you fix this?
+5)What is the difference between the following
+ two tests: w.isupper() and not w.islower()?
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+1)Implement the STACK Data Structure. It should be a menu-driven
+program with the following options:
+Stack Operations
+---------------
+1. Push
+2. Pop
+3. Display
+4. Quit
+Your choice [1-4]:
+
+2)Write a program to accept a IP Address from the user and validate
+it.
+The IP Address has FOUR Octets and the
+valid values for each of the octet is in the range of 0 to 255.
+
+3)Define sent to be the list of words ['she', 'sells', 'sea', 
+'shells', 'by', 'the', 'sea', 'shore']. Now write code to perform the following tasks:
+a. Print all words beginning with sh.
+b. Print all words longer than four characters.
+
+4)Create a variable words containing a list of words. 
+Experiment with words.sort() and sorted(words). 
+What is the difference?
+
+5)CALCULATOR
+
+	1. simple calc
+	2. sci calc
+	3. exit
+
+	simple calc
+	-----------------
+	1. add
+	2. sub
+	3. mul	
+	4. div
+	5. go back
+
+	sci calc
+	-----------------
+	1. sin
+	2. cos
+	3. power of	
+	4. sqaure root
+	5. go back
+---------------------------------------------------------------------------
+* Menu driven=> ask the choice from user
+* Check for invalid chloice
+* Implement with two files=> menu.py and ops.py
+* Put doc strings
+* Clearing screen should be used to move from 
+   one menu to another
+* Give meaningful names for variables and functions  
+
+
+
+
+
+

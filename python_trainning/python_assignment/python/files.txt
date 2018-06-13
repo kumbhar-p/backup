@@ -1,0 +1,18 @@
+#File Processing
+... #Steps for file processing:
+... #1. Open a file
+...     #returns a file object or success, IOError on failure
+...     #Default mode is 'r'
+... #2.Process a file
+...     #We can read file's data using the following methods:
+...     #-read([size])->Read's size byts or the entire file.
+...     #-readline()->Read's one line at a time
+...     #-readlines()->Read's alll the lines and returns a list.
+...     #We can write data to a file operand for writing or appending
+...             #using the following methods:
+...     #- write(str)->Writes the string passed as an argument.
+...     #-writelines()->Writes all the lines from the list passed as an argument
+... #3.CLose the file
+...     #Mandatory to close a file.
+...     #TO close()  method is used for this purpose
+

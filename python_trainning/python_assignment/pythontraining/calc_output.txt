@@ -1,0 +1,8 @@
+sum of 20 and 50 is 70
+Subtraction of 50 and 25 is 25
+Multiplication of 5 and 6 is 30
+Division of 2 and 8 is 0
+Sin of 2 is 0
+Cos of 6 is 0
+5 to the power of 6 is 15625
+Square-root of 5 is 2
