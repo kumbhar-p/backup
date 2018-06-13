@@ -1,0 +1,115 @@
+Aptitude
+------------
+
+1.if PORTVGAL is TVRQCNWI,A2AMGARH=?
+
+2.questions on directions
+
+
+Technical
+-----------------
+
+1.main()
+{
+		int a=5;
+		printf("%d\n",~a^a++ || ++a++>>2 && !a&a--);
+}
+
+		2.
+main()
+{
+		int r;
+		if(r= 5 !=4 )
+				printf("inside loop %d\n",r);
+		else
+				printf("otsid %d\n",r)
+}
+
+3.
+
+main()
+{
+		int max,min;
+		max >>= fun(fun1(max,min),fun2(&min,&max)) ;
+
+		fun1(int x,int y)
+		{
+				return x*y;
+		}
+
+		fun2(int *x,int *y)
+		{
+				*p=*p * *q;
+				*q+=*q+*p;
+				*q=*q % *q;
+				return q;
+		}
+
+		fun(int a,int b)
+		{
+
+		}
+
+
+		4.
+
+				main()
+				{
+						char str[]="ab cde fghi";
+						char *str1,*str2,*str3;
+
+						sscanf(str, "%s", str1);
+						printf ("%s\n", str1);
+
+						sscanf(str, "%s", str2, str3);
+						printf ("%s%s\n", str2, str3);
+
+						return 0;
+				}
+
+		5.
+				int main ()
+				{
+						char *p = "NULL\0";
+
+						printf ("%s\n", p);
+
+						return 0;
+				}
+
+
+		6.
+
+				int main ()
+				{
+						int x = 5;
+						int *p = &x;
+
+						printf ("%d\n", ++*p);
+
+						return 0;
+				}
+
+
+		7.
+
+#define f(x, y) x##y
+#define g(y) #y
+#define h(y) g(y)
+int main ()
+{
+
+	printf ("%s\n", f (2, 3)
+}
+
+8.
+char c="ram\0";
+	int main()
+{
+			char a[]="ram";
+         	char b[]="hari\0";
+			strcpy(a,b);
+			printf("%d %d",sizeof(b),sizeof(c));
+			}
+9.
+questions on Structures,Function ponters,Operators.
